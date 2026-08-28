@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking History — BeautySpot</title>
+  <meta name="description" content="View your BeautySpot booking history — upcoming, confirmed, completed, and cancelled appointments.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/responsive.css" rel="stylesheet">
+
+<script>
+  (function(){
+    var t=localStorage.getItem("bs_theme"), d=localStorage.getItem("bs_dir");
+    if(t==="dark") document.documentElement.setAttribute("data-theme","dark");
+    if(d==="rtl") document.documentElement.setAttribute("dir","rtl");
+  })();
+</script>
+</head>
+<body>
+
+<div id="preloader" class="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-logo">Beauty<span>Spot</span></div>
+    <div class="preloader-spinner"></div>
+  </div>
+</div>
+
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Beauty<span>Spot</span></a>
+    <ul class="nav-desktop">
+      <li class="has-dropdown">
+        <a href="index.html" class="nav-home-trigger">Home <i class="bi bi-chevron-down"></i></a>
+        <div class="nav-dropdown">
+          <a href="index.html">Home 1</a>
+          <a href="home-2.html">Home 2</a>
+        </div>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="how-it-works.html">How It Works</a></li>
+
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="customer-dashboard.html">Dashboard</a></li>
+    </ul>
+    <div class="header-actions">
+      <div class="nav-controls">
+        <button type="button" class="nav-control-btn theme-toggle" aria-label="Toggle theme" title="Toggle Light/Dark Mode">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button type="button" class="nav-control-btn rtl-toggle" aria-label="Toggle layout direction" title="Toggle RTL/LTR">
+          <span class="rtl-label">RTL</span>
+        </button>
+      </div>
+      <a href="login.html" class="header-login">Login</a>
+      <a href="booking.html" class="btn btn-primary header-cta">Book Appointment</a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<nav class="mobile-nav" aria-label="Mobile">
+  <ul>
+    <li>
+      <button class="mobile-drop-toggle" aria-expanded="false">Home <i class="bi bi-chevron-down"></i></button>
+      <div class="mobile-sub">
+        <a href="index.html">Home 1</a>
+        <a href="home-2.html">Home 2</a>
+      </div>
+    </li>
+    <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="how-it-works.html">How It Works</a></li>
+
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="customer-dashboard.html">Dashboard</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="login.html">Login</a></li>
+  </ul>
+  <div class="mobile-nav-actions"><!-- mobile-nav-controls-added -->
+    <div class="nav-controls" style="justify-content:center;margin-bottom:14px">
+      <button type="button" class="nav-control-btn theme-toggle" aria-label="Toggle theme" title="Toggle Light/Dark Mode">
+        <i class="bi bi-moon-stars"></i>
+      </button>
+      <button type="button" class="nav-control-btn rtl-toggle" aria-label="Toggle layout direction" title="Toggle RTL/LTR">
+        <span class="rtl-label">RTL</span>
+      </button>
+    </div>
+    <a href="booking.html" class="btn btn-primary">Book Appointment</a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- SECTION 1: PAGE HERO -->
+  <section class="page-hero">
+    <div class="deco-circle" aria-hidden="true"></div>
+    <div class="container reveal-on-scroll">
+      <span class="eyebrow">Account</span>
+      <h1>Booking History</h1>
+      <p class="section-lead">Review past visits, upcoming appointments, invoices, and status updates.</p>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <a href="customer-dashboard.html">Dashboard</a>
+        <span>/</span>
+        <span>History</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- SECTION 2: FILTER / STATUS SUMMARY -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="dash-cards reveal-on-scroll">
+        <div class="dash-stat"><div class="label">Upcoming</div><div class="value">2</div></div>
+        <div class="dash-stat"><div class="label">Confirmed</div><div class="value">1</div></div>
+        <div class="dash-stat"><div class="label">Completed</div><div class="value">8</div></div>
+        <div class="dash-stat"><div class="label">Cancelled</div><div class="value">1</div></div>
+      </div>
+      <div class="filter-bar reveal-on-scroll" data-target=".history-section">
+        <button type="button" class="filter-btn active" data-filter="all">All</button>
+        <button type="button" class="filter-btn" data-filter="upcoming">Upcoming</button>
+        <button type="button" class="filter-btn" data-filter="confirmed">Confirmed</button>
+        <button type="button" class="filter-btn" data-filter="completed">Completed</button>
+        <button type="button" class="filter-btn" data-filter="cancelled">Cancelled</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: UPCOMING BOOKINGS -->
+  <section class="section history-section" data-category="upcoming" style="padding-top:0">
+    <div class="container">
+      <div class="reveal-on-scroll">
+        <span class="eyebrow">Next Visits</span>
+        <h2 class="section-title">Upcoming Bookings</h2>
+      </div>
+      <div class="history-table-wrap reveal-on-scroll" style="margin-top:24px">
+        <table class="history-table">
+          <thead>
+            <tr>
+              <th>Booking ID</th>
+              <th>Service</th>
+              <th>Date</th>
+              <th>Beautician</th>
+              <th>Amount</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>BS-2026-8842</td>
+              <td>Glow Facial</td>
+              <td>26 Aug 2026 · 4:30 PM</td>
+              <td>Meera Sharma</td>
+              <td>₹899</td>
+              <td><span class="status-pill status-upcoming">Upcoming</span></td>
+              <td>
+                <a href="customer-dashboard.html">View Details</a>
+                · <a href="invoice.html">Invoice</a>
+              </td>
+            </tr>
+            <tr>
+              <td>BS-2026-8901</td>
+              <td>Hair Styling</td>
+              <td>02 Sep 2026 · 11:00 AM</td>
+              <td>Ananya Reddy</td>
+              <td>₹699</td>
+              <td><span class="status-pill status-upcoming">Upcoming</span></td>
+              <td>
+                <a href="customer-dashboard.html">View Details</a>
+                · <a href="invoice.html">Invoice</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: CONFIRMED BOOKINGS -->
+  <section class="section bg-soft history-section" data-category="confirmed">
+    <div class="container">
+      <div class="reveal-on-scroll">
+        <span class="eyebrow">Locked In</span>
+        <h2 class="section-title">Confirmed Bookings</h2>
+      </div>
+      <div class="history-table-wrap reveal-on-scroll" style="margin-top:24px">
+        <table class="history-table">
+          <thead>
+            <tr>
+              <th>Booking ID</th>
+              <th>Service</th>
+              <th>Date</th>
+              <th>Beautician</th>
+              <th>Amount</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>BS-2026-8755</td>
+              <td>Bridal Makeup</td>
+              <td>12 Sep 2026 · 8:00 AM</td>
+              <td>Priya Kapoor</td>
+              <td>₹7999</td>
+              <td><span class="status-pill status-confirmed">Confirmed</span></td>
+              <td>
+                <a href="customer-dashboard.html">View Details</a>
+                · <a href="invoice.html">Invoice</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: COMPLETED BOOKINGS -->
+  <section class="section history-section" data-category="completed">
+    <div class="container">
+      <div class="reveal-on-scroll">
+        <span class="eyebrow">Past Visits</span>
+        <h2 class="section-title">Completed Bookings</h2>
+      </div>
+      <div class="history-table-wrap reveal-on-scroll" style="margin-top:24px">
+        <table class="history-table">
+          <thead>
+            <tr>
+              <th>Booking ID</th>
+              <th>Service</th>
+              <th>Date</th>
+              <th>Beautician</th>
+              <th>Amount</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>BS-2026-4410</td>
+              <td>Glow Facial</td>
+              <td>10 Aug 2026 · 3:00 PM</td>
+              <td>Meera Sharma</td>
+              <td>₹899</td>
+              <td><span class="status-pill status-completed">Completed</span></td>
+              <td>
+                <a href="customer-dashboard.html">View Details</a>
+                · <a href="invoice.html">Invoice</a>
+              </td>
+            </tr>
+            <tr>
+              <td>BS-2026-3988</td>
+              <td>Manicure</td>
+              <td>28 Jul 2026 · 5:00 PM</td>
+              <td>Sana Iqbal</td>
+              <td>₹499</td>
+              <td><span class="status-pill status-completed">Completed</span></td>
+              <td>
+                <a href="customer-dashboard.html">View Details</a>
+                · <a href="invoice.html">Invoice</a>
+              </td>
+            </tr>
+            <tr>
+              <td>BS-2026-3512</td>
+              <td>Haircut</td>
+              <td>14 Jul 2026 · 12:00 PM</td>
+              <td>Ananya Reddy</td>
+              <td>₹499</td>
+              <td><span class="status-pill status-completed">Completed</span></td>
+              <td>
+                <a href="customer-dashboard.html">View Details</a>
+                · <a href="invoice.html">Invoice</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: CANCELLED BOOKINGS -->
+  <section class="section bg-light history-section" data-category="cancelled">
+    <div class="container">
+      <div class="reveal-on-scroll">
+        <span class="eyebrow">Archived</span>
+        <h2 class="section-title">Cancelled Bookings</h2>
+      </div>
+      <div class="history-table-wrap reveal-on-scroll" style="margin-top:24px">
+        <table class="history-table">
+          <thead>
+            <tr>
+              <th>Booking ID</th>
+              <th>Service</th>
+              <th>Date</th>
+              <th>Beautician</th>
+              <th>Amount</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>BS-2026-3201</td>
+              <td>Pedicure</td>
+              <td>02 Jul 2026 · 4:00 PM</td>
+              <td>—</td>
+              <td>₹599</td>
+              <td><span class="status-pill status-cancelled">Cancelled</span></td>
+              <td>
+                <a href="booking.html">Book Again</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: CTA -->
+  <section class="cta-band">
+    <div class="deco-circle c1" aria-hidden="true"></div>
+    <div class="deco-circle c2" aria-hidden="true"></div>
+    <div class="container reveal-on-scroll">
+      <h2>Ready For Your Next Glow?</h2>
+      <p>Book another home service in minutes — same trusted professionals, flexible slots.</p>
+      <a href="booking.html" class="btn btn-white">Book Again</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Beauty<span>Spot</span></a>
+        <p>Home salon & beauty service on demand. Professional treatments delivered to your doorstep.</p>
+        <div class="social-links" style="margin-top:18px">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+        </div>
+      </div>
+      <div class="footer-col"><h5>Explore</h5>
+        <a href="about.html">About</a><a href="services.html">Services</a><a href="pricing.html">Pricing</a><a href="how-it-works.html">How It Works</a>
+      </div>
+      <div class="footer-col"><h5>Support</h5>
+        <a href="safety-standards.html">Safety Standards</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a href="blog.html">Blog</a>
+      </div>
+      <div class="footer-col"><h5>Account</h5>
+        <a href="login.html">Login</a><a href="register.html">Register</a><a href="customer-dashboard.html">Dashboard</a><a href="booking.html">Book Now</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 BeautySpot. All rights reserved.</span>
+      <span>Home Salon & Beauty Service On Demand</span>
+    </div>
+  </div>
+</footer>
+
+<button type="button" id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

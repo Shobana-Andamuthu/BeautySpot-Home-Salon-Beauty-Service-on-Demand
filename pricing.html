@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transparent Pricing &amp; Beauty Passes — BeautySpot</title>
+  <meta name="description" content="Explore modern pricing cards, curated beauty passes, and custom doorstep service estimates at BeautySpot.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/responsive.css" rel="stylesheet">
+
+<script>
+  (function(){
+    var t=localStorage.getItem("bs_theme"), d=localStorage.getItem("bs_dir");
+    if(t==="dark") document.documentElement.setAttribute("data-theme","dark");
+    if(d==="rtl") document.documentElement.setAttribute("dir","rtl");
+  })();
+</script>
+</head>
+<body>
+
+<div id="preloader" class="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-logo">Beauty<span>Spot</span></div>
+    <div class="preloader-spinner"></div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Beauty<span>Spot</span></a>
+    <ul class="nav-desktop">
+      <li class="has-dropdown">
+        <a href="index.html" class="nav-home-trigger">Home <i class="bi bi-chevron-down"></i></a>
+        <div class="nav-dropdown">
+          <a href="index.html">Home 1</a>
+          <a href="home-2.html">Home 2</a>
+        </div>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="how-it-works.html">How It Works</a></li>
+
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="customer-dashboard.html">Dashboard</a></li>
+    </ul>
+    <div class="header-actions">
+      <div class="nav-controls">
+        <button type="button" class="nav-control-btn theme-toggle" aria-label="Toggle theme" title="Toggle Light/Dark Mode">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button type="button" class="nav-control-btn rtl-toggle" aria-label="Toggle layout direction" title="Toggle RTL/LTR">
+          <span class="rtl-label">RTL</span>
+        </button>
+      </div>
+      <a href="login.html" class="header-login">Login</a>
+      <a href="booking.html" class="btn btn-primary header-cta">Book Appointment</a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<nav class="mobile-nav" aria-label="Mobile">
+  <ul>
+    <li>
+      <button class="mobile-drop-toggle" aria-expanded="false">Home <i class="bi bi-chevron-down"></i></button>
+      <div class="mobile-sub">
+        <a href="index.html">Home 1</a>
+        <a href="home-2.html">Home 2</a>
+      </div>
+    </li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="how-it-works.html">How It Works</a></li>
+
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="customer-dashboard.html">Dashboard</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="login.html">Login</a></li>
+  </ul>
+  <div class="mobile-nav-actions">
+    <div class="nav-controls" style="justify-content:center;margin-bottom:14px">
+      <button type="button" class="nav-control-btn theme-toggle" aria-label="Toggle theme" title="Toggle Light/Dark Mode">
+        <i class="bi bi-moon-stars"></i>
+      </button>
+      <button type="button" class="nav-control-btn rtl-toggle" aria-label="Toggle layout direction" title="Toggle RTL/LTR">
+        <span class="rtl-label">RTL</span>
+      </button>
+    </div>
+    <a href="booking.html" class="btn btn-primary">Book Appointment</a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- SECTION 1: PAGE HERO -->
+  <section class="page-hero">
+    <div class="deco-circle" aria-hidden="true"></div>
+    <div class="container reveal-on-scroll">
+      <span class="eyebrow">Upfront &amp; Transparent</span>
+      <h1>BeautySpot Pricing</h1>
+      <p class="section-lead">Clear pricing, flexible beauty passes, and custom package rates — with zero hidden fees.</p>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Pricing</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- SECTION 2: MEMBERSHIP & TIERED PRICING CARDS -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center reveal-on-scroll">
+        <span class="eyebrow">Beauty Passes</span>
+        <h2 class="section-title centered">Flexible Home Salon Membership Plans</h2>
+        <p class="section-lead">Enjoy regular pampering at discounted member rates with priority beautician matching.</p>
+        
+        <div class="pricing-toggle-wrap" id="pricingBillingToggle" style="margin-top:24px">
+          <button type="button" class="toggle-btn active" data-cycle="monthly">Pay Monthly</button>
+          <button type="button" class="toggle-btn" data-cycle="annual">Pay Annually (Save 25%)</button>
+        </div>
+      </div>
+
+      <div class="row g-4 align-items-stretch" style="margin-top:36px">
+        <!-- PLAN 1: BASIC GLOW -->
+        <div class="col-lg-4 col-md-6 reveal-on-scroll">
+          <div class="plan-card">
+            <span class="plan-badge bg-pink-soft text-pink">Starter Pass</span>
+            <h3 class="fw-bold" style="font-size:1.35rem">Essential Glow</h3>
+            <p style="font-size:13.5px;color:var(--muted)">Perfect for monthly skin &amp; nail upkeep</p>
+            <div class="plan-price">
+              ₹<span class="plan-price-val" data-monthly="1,299" data-annual="999">1,299</span>
+              <span class="plan-cycle-val">/mo</span>
+            </div>
+            <ul class="plan-features">
+              <li><i class="bi bi-check-circle-fill"></i> 2 Glow Facials or Cleanups / month</li>
+              <li><i class="bi bi-check-circle-fill"></i> 1 Deluxe Manicure ritual</li>
+              <li><i class="bi bi-check-circle-fill"></i> 10% Off all additional add-ons</li>
+              <li><i class="bi bi-check-circle-fill"></i> Standard doorstep visit included</li>
+            </ul>
+            <a href="booking.html" class="btn btn-outline w-100">Choose Essential</a>
+          </div>
+        </div>
+
+        <!-- PLAN 2: FEATURED SIGNATURE GLAM -->
+        <div class="col-lg-4 col-md-6 reveal-on-scroll">
+          <div class="plan-card featured-plan">
+            <span class="plan-badge bg-pink text-white">Most Popular</span>
+            <h3 class="fw-bold" style="font-size:1.35rem">Signature Beauty Pass</h3>
+            <p style="font-size:13.5px;color:var(--muted)">Complete care for hair, skin &amp; nails</p>
+            <div class="plan-price text-pink">
+              ₹<span class="plan-price-val" data-monthly="2,499" data-annual="1,899">2,499</span>
+              <span class="plan-cycle-val">/mo</span>
+            </div>
+            <ul class="plan-features">
+              <li><i class="bi bi-check-circle-fill"></i> 4 Services per month (Hair, Skin, Nails)</li>
+              <li><i class="bi bi-check-circle-fill"></i> Free Express Hair Styling with any visit</li>
+              <li><i class="bi bi-check-circle-fill"></i> Priority slot booking (Same-day guaranteed)</li>
+              <li><i class="bi bi-check-circle-fill"></i> 15% Off bridal &amp; party glam packages</li>
+              <li><i class="bi bi-check-circle-fill"></i> Preferred beautician matching</li>
+            </ul>
+            <a href="booking.html" class="btn btn-primary w-100">Get Signature Pass</a>
+          </div>
+        </div>
+
+        <!-- PLAN 3: ROYAL VIP LUXURY -->
+        <div class="col-lg-4 col-md-6 reveal-on-scroll">
+          <div class="plan-card">
+            <span class="plan-badge bg-dark text-white">VIP Luxury</span>
+            <h3 class="fw-bold" style="font-size:1.35rem">Royal VIP Pass</h3>
+            <p style="font-size:13.5px;color:var(--muted)">Unlimited luxury pampering &amp; senior experts</p>
+            <div class="plan-price">
+              ₹<span class="plan-price-val" data-monthly="4,999" data-annual="3,799">4,999</span>
+              <span class="plan-cycle-val">/mo</span>
+            </div>
+            <ul class="plan-features">
+              <li><i class="bi bi-check-circle-fill"></i> 8 Premium Services per month</li>
+              <li><i class="bi bi-check-circle-fill"></i> Anti-Aging Facial &amp; Pedicure Spa included</li>
+              <li><i class="bi bi-check-circle-fill"></i> Assigned Senior Master Beautician</li>
+              <li><i class="bi bi-check-circle-fill"></i> Free monthly home body polish session</li>
+              <li><i class="bi bi-check-circle-fill"></i> Complimentary family member access</li>
+            </ul>
+            <a href="booking.html" class="btn btn-outline w-100">Choose VIP Pass</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: VISUAL SERVICE PRICING CARDS GRID -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="text-center reveal-on-scroll">
+        <span class="eyebrow">Individual Services</span>
+        <h2 class="section-title centered">A La Carte Service Pricing</h2>
+        <p class="section-lead">Select treatments à la carte — transparent flat pricing for every category.</p>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="filter-bar reveal-on-scroll" data-target=".price-card-col" style="justify-content:center;margin-top:28px">
+        <button type="button" class="filter-btn active" data-filter="all">All Services</button>
+        <button type="button" class="filter-btn" data-filter="hair">Hair Care</button>
+        <button type="button" class="filter-btn" data-filter="skin">Skincare</button>
+        <button type="button" class="filter-btn" data-filter="nails">Nail Care</button>
+        <button type="button" class="filter-btn" data-filter="bridal">Bridal &amp; Glam</button>
+      </div>
+
+      <div class="row g-4 align-items-stretch" style="margin-top:28px">
+        <!-- HAIR CARE (4 Cards) -->
+        <!-- Card 1: Hair Styling -->
+        <div class="col-lg-3 col-md-6 price-card-col reveal-on-scroll" data-category="hair">
+          <div class="price-card">
+            <div class="price-card-img">
+              <img src="assets/images/unique-variants/services/service-hair-styling-variant-4.jpg" alt="Hair Styling & Blowout">
+            </div>
+            <div class="price-card-body">
+              <div class="price-card-meta">
+                <span class="price-card-tag">Hair Care</span>
+                <span class="price-card-val">₹699</span>
+              </div>
+              <h4 style="font-size:1.15rem;margin-bottom:6px">Hair Styling &amp; Blowout</h4>
+              <p style="font-size:13px;color:var(--muted);margin-bottom:16px">Occasion styling, curls, waves &amp; sleek blowouts.</p>
+              <div class="mt-auto">
+                <a href="booking.html" class="btn btn-outline btn-sm w-100">Book ₹699</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Nourishing Hair Spa -->
+        <div class="col-lg-3 col-md-6 price-card-col reveal-on-scroll" data-category="hair">
+          <div class="price-card">
+            <div class="price-card-img">
+              <img src="assets/images/services/service-hair-spa.png" alt="Nourishing Hair Spa">
+            </div>
+            <div class="price-card-body">
+              <div class="price-card-meta">
+                <span class="price-card-tag">Hair Care</span>
+                <span class="price-card-val">₹899</span>
+              </div>
+              <h4 style="font-size:1.15rem;margin-bottom:6px">Nourishing Hair Spa</h4>
+              <p style="font-size:13px;color:var(--muted);margin-bottom:16px">Intensive cream mask ritual &amp; scalp massage.</p>
+              <div class="mt-auto">
+                <a href="booking.html" class="btn btn-outline btn-sm w-100">Book ₹899</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Precision Haircut -->
+        <div class="col-lg-3 col-md-6 price-card-col reveal-on-scroll" data-category="hair">
+          <div class="price-card">
+            <div class="price-card-img">
+              <img src="assets/images/unique-variants/services/service-haircut-variant-3.jpg" alt="Precision Haircut & Trim">
+            </div>
+            <div class="price-card-body">
+              <div class="price-card-meta">
+                <span class="price-card-tag">Hair Care</span>
+                <span class="price-card-val">₹599</span>
+              </div>
+              <h4 style="font-size:1.15rem;margin-bottom:6px">Precision Haircut &amp; Trim</h4>
+              <p style="font-size:13px;color:var(--muted);margin-bottom:16px">Custom layer cut, split-end trim &amp; finishing blowout.</p>
+              <div class="mt-auto">
+                <a href="booking.html" class="btn btn-outline btn-sm w-100">Book ₹599</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Keratin Hair Repair -->
+        <div class="col-lg-3 col-md-6 price-card-col reveal-on-scroll" data-category="hair">
+          <div class="price-card">
+            <div class="price-card-img">
+              <img src="assets/images/services/service-hair-botox.png" alt="Keratin Repair & Hair Botox">
+            </div>
+            <div class="price-card-body">
+              <div class="price-card-meta">
+                <span class="price-card-tag">Hair Care</span>
+                <span class="price-card-val">₹1,499</span>
+              </div>
+              <h4 style="font-size:1.15rem;margin-bottom:6px">Keratin Repair &amp; Hair Botox</h4>
+              <p style="font-size:13px;color:var(--muted);margin-bottom:16px">Smooth frizz-free keratin protein treatment for silky hair.</p>
+              <div class="mt-auto">
+                <a href="booking.html" class="btn btn-outline btn-sm w-100">Book ₹1,499</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SKINCARE (4 Cards) -->
+        <!-- Card 5: Signature Glow Facial -->
+        <div class="col-lg-3 col-md-6 price-card-col reveal-on-scroll" data-category="skin">
+          <div class="price-card">
+            <div class="price-card-img">
+              <img src="assets/images/unique-variants/services/service-anti-aging-variant-2.jpg" alt="Signature Glow Facial">
+            </div>
+            <div class="price-card-body">
+              <div class="price-card-meta">
+                <span class="price-card-tag">Skincare</span>
+                <span class="price-card-val">₹899</span>
+              </div>
+              <h4 style="font-size:1.15rem;margin-bottom:6px">Signature Glow Facial</h4>
+              <p style="font-size:13px;color:var(--muted);margin-bottom:16px">Cleanse, facial massage &amp; vitamin hydration mask.</p>
+              <div class="mt-auto">
+                <a href="booking.html" class="btn btn-outline btn-sm w-100">Book ₹899</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6: Anti-Aging Lift Facial -->
+        <div class="col-lg-3 col-md-6 price-card-col reveal-on-scroll" data-category="skin">
+          <div class="price-card">
+            <div class="price-card-img">
+              <img src="assets/images/unique-variants/services/service-glow-facial-variant-2.jpg" alt="Anti-Aging Lift Facial">
+            </div>
+            <div class="price-card-body">
+              <div class="price-card-meta">
+                <span class="price-card-tag">Skincare</span>
+                <span class="price-card-val">₹1,299</span>
+              </div>
+              <h4 style="font-size:1.15rem;margin-bottom:6px">Anti-Aging Lift Facial</h4>
+              <p style="font-size:13px;color:var(--muted);margin-bottom:16px">Firming collagen therapy for youthful radiance.</p>
+              <div class="mt-auto">
+                <a href="booking.html" class="btn btn-outline btn-sm w-100">Book ₹1,299</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 7: Pore Deep Skin Cleanup -->
+        <div class="col-lg-3 col-md-6 price-card-col reveal-on-scroll" data-category="skin">
+          <div class="price-card">
+            <div class="price-card-img">
+              <img src="assets/images/unique-variants/services/service-skin-cleanup-variant-3.jpg" alt="Pore Deep Skin Cleanup">
+            </div>
+            <div class="price-card-body">
+              <div class="price-card-meta">
+                <span class="price-card-tag">Skincare</span>
+                <span class="price-card-val">₹699</span>
+              </div>
+              <h4 style="font-size:1.15rem;margin-bottom:6px">Pore Deep Skin Cleanup</h4>
+              <p style="font-size:13px;color:var(--muted);margin-bottom:16px">Deep steam extraction, exfoliator &amp; soothing pack.</p>
+              <div class="mt-auto">
+                <a href="booking.html" class="btn btn-outline btn-sm w-100">Book ₹699</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 8: Organic Skin Detox Ritual -->
+        <div class="col-lg-3 col-md-6 price-card-col reveal-on-scroll" data-category="skin">
+          <div class="price-card">
+            <div class="price-card-img">
+              <img src="assets/images/unique-variants/services/service-detox-cleanup-variant-2.jpg" alt="Botanical Detox Ritual">
+            </div>
+            <div class="price-card-body">
+              <div class="price-card-meta">
+                <span class="price-card-tag">Skincare</span>
+                <span class="price-card-val">₹999</span>
+              </div>
+              <h4 style="font-size:1.15rem;margin-bottom:6px">Botanical Detox Ritual</h4>
+              <p style="font-size:13px;color:var(--muted);margin-bottom:16px">Herbal purify therapy with green botanical mask.</p>
+              <div class="mt-auto">
+                <a href="booking.html" class="btn btn-outline btn-sm w-100">Book ₹999</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- NAIL CARE (4 Cards) -->
+        <!-- Card 9: Deluxe Manicure -->
+        <div class="col-lg-3 col-md-6 price-card-col reveal-on-scroll" data-category="nails">
+          <div class="price-card">
+            <div class="price-card-img">
+              <img src="assets/images/unique-variants/services/service-manicure-variant-3.jpg" alt="Deluxe Manicure">
+            </div>
+            <div class="price-card-body">
+              <div class="price-card-meta">
+                <span class="price-card-tag">Nail Care</span>
+                <span class="price-card-val">₹499</span>
+              </div>
+              <h4 style="font-size:1.15rem;margin-bottom:6px">Deluxe Manicure</h4>
+              <p style="font-size:13px;color:var(--muted);margin-bottom:16px">Nail shaping, cuticle exfoliation &amp; gel coat.</p>
+              <div class="mt-auto">
+                <a href="booking.html" class="btn btn-outline btn-sm w-100">Book ₹499</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 10: Royal Pedicure Spa -->
+        <div class="col-lg-3 col-md-6 price-card-col reveal-on-scroll" data-category="nails">
+          <div class="price-card">
+            <div class="price-card-img">
+              <img src="assets/images/unique-variants/services/service-pedicure-variant-3.jpg" alt="Royal Pedicure Spa">
+            </div>
+            <div class="price-card-body">
+              <div class="price-card-meta">
+                <span class="price-card-tag">Nail Care</span>
+                <span class="price-card-val">₹599</span>
+              </div>
+              <h4 style="font-size:1.15rem;margin-bottom:6px">Royal Pedicure Spa</h4>
+              <p style="font-size:13px;color:var(--muted);margin-bottom:16px">Relaxing foot soak, dead skin scrub &amp; massage.</p>
+              <div class="mt-auto">
+                <a href="booking.html" class="btn btn-outline btn-sm w-100">Book ₹599</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 11: Gel Nail Polish & Art -->
+        <div class="col-lg-3 col-md-6 price-card-col reveal-on-scroll" data-category="nails">
+          <div class="price-card">
+            <div class="price-card-img">
+              <img src="assets/images/services/service-gel-nails.png" alt="Gel Nail Polish & Art">
+            </div>
+            <div class="price-card-body">
+              <div class="price-card-meta">
+                <span class="price-card-tag">Nail Care</span>
+                <span class="price-card-val">₹799</span>
+              </div>
+              <h4 style="font-size:1.15rem;margin-bottom:6px">Gel Nail Polish &amp; Art</h4>
+              <p style="font-size:13px;color:var(--muted);margin-bottom:16px">Long-lasting UV gel polish with custom nail design.</p>
+              <div class="mt-auto">
+                <a href="booking.html" class="btn btn-outline btn-sm w-100">Book ₹799</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 12: Acrylic Nail Extensions -->
+        <div class="col-lg-3 col-md-6 price-card-col reveal-on-scroll" data-category="nails">
+          <div class="price-card">
+            <div class="price-card-img">
+              <img src="assets/images/services/acrylic-nail-extensions.png" alt="Acrylic Nail Extensions">
+            </div>
+            <div class="price-card-body">
+              <div class="price-card-meta">
+                <span class="price-card-tag">Nail Care</span>
+                <span class="price-card-val">₹1,199</span>
+              </div>
+              <h4 style="font-size:1.15rem;margin-bottom:6px">Acrylic Nail Extensions</h4>
+              <p style="font-size:13px;color:var(--muted);margin-bottom:16px">Full set acrylic tip extensions with gloss finish.</p>
+              <div class="mt-auto">
+                <a href="booking.html" class="btn btn-outline btn-sm w-100">Book ₹1,199</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BRIDAL & GLAM (4 Cards) -->
+        <!-- Card 13: HD Airbrush Bridal Makeup -->
+        <div class="col-lg-3 col-md-6 price-card-col reveal-on-scroll" data-category="bridal">
+          <div class="price-card">
+            <div class="price-card-img">
+              <img src="assets/images/unique-variants/services/service-bridal-makeup-variant-4.jpg" alt="HD Airbrush Bridal Makeup">
+            </div>
+            <div class="price-card-body">
+              <div class="price-card-meta">
+                <span class="price-card-tag">Bridal &amp; Glam</span>
+                <span class="price-card-val">₹7,999</span>
+              </div>
+              <h4 style="font-size:1.15rem;margin-bottom:6px">HD Airbrush Bridal Makeup</h4>
+              <p style="font-size:13px;color:var(--muted);margin-bottom:16px">Trial session, HD long-stay glam &amp; dupatta draping.</p>
+              <div class="mt-auto">
+                <a href="booking.html" class="btn btn-outline btn-sm w-100">Book ₹7,999</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 14: Party Evening Makeup -->
+        <div class="col-lg-3 col-md-6 price-card-col reveal-on-scroll" data-category="bridal">
+          <div class="price-card">
+            <div class="price-card-img">
+              <img src="assets/images/services/service-nude-glam.png" alt="Soft nude party makeup">
+            </div>
+            <div class="price-card-body">
+              <div class="price-card-meta">
+                <span class="price-card-tag">Bridal &amp; Glam</span>
+                <span class="price-card-val">₹2,499</span>
+              </div>
+              <h4 style="font-size:1.15rem;margin-bottom:6px">Party Evening Makeup</h4>
+              <p style="font-size:13px;color:var(--muted);margin-bottom:16px">Glamorous event makeup with contour &amp; false lashes.</p>
+              <div class="mt-auto">
+                <a href="booking.html" class="btn btn-outline btn-sm w-100">Book ₹2,499</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 15: Pre-Bridal Skin Glow Ritual -->
+        <div class="col-lg-3 col-md-6 price-card-col reveal-on-scroll" data-category="bridal">
+          <div class="price-card">
+            <div class="price-card-img">
+              <img src="assets/images/services/bridal-henna-art.png" alt="Pre-Bridal Skin Glow Ritual">
+            </div>
+            <div class="price-card-body">
+              <div class="price-card-meta">
+                <span class="price-card-tag">Bridal &amp; Glam</span>
+                <span class="price-card-val">₹3,499</span>
+              </div>
+              <h4 style="font-size:1.15rem;margin-bottom:6px">Pre-Bridal Skin Glow Ritual</h4>
+              <p style="font-size:13px;color:var(--muted);margin-bottom:16px">Full body polishing, glow facial &amp; hair treatment.</p>
+              <div class="mt-auto">
+                <a href="booking.html" class="btn btn-outline btn-sm w-100">Book ₹3,499</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 16: Express 45-Min Party Glam -->
+        <div class="col-lg-3 col-md-6 price-card-col reveal-on-scroll" data-category="bridal">
+          <div class="price-card">
+            <div class="price-card-img">
+              <img src="assets/images/unique-variants/services/service-express-glam-variant-2.jpg" alt="Express 45-Min Party Glam">
+            </div>
+            <div class="price-card-body">
+              <div class="price-card-meta">
+                <span class="price-card-tag">Bridal &amp; Glam</span>
+                <span class="price-card-val">₹1,499</span>
+              </div>
+              <h4 style="font-size:1.15rem;margin-bottom:6px">Express 45-Min Party Glam</h4>
+              <p style="font-size:13px;color:var(--muted);margin-bottom:16px">Quick glow touchup, eye makeup &amp; soft lip finish.</p>
+              <div class="mt-auto">
+                <a href="booking.html" class="btn btn-outline btn-sm w-100">Book ₹1,499</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: INTERACTIVE CUSTOM PACKAGE BUILDER / ESTIMATOR -->
+  <section class="section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 reveal-on-scroll">
+          <span class="eyebrow">Build Your Custom Ritual</span>
+          <h2 class="section-title">Interactive Price Estimator</h2>
+          <p class="section-lead">Select the services you want to combine in a single visit and get an instant custom quote with automatic bundle discounts.</p>
+
+          <form id="packageEstimatorForm" style="margin-top:28px">
+            <div class="estimator-item selected">
+              <div class="d-flex align-items-center gap-3">
+                <input type="checkbox" id="est1" data-price="899" data-time="60" checked>
+                <label for="est1" class="mb-0 cursor-pointer">
+                  <strong>Signature Glow Facial</strong>
+                  <span class="d-block text-muted fs-13">Deep cleansing &amp; vitamin mask</span>
+                </label>
+              </div>
+              <span class="fw-bold text-pink">₹899</span>
+            </div>
+
+            <div class="estimator-item selected">
+              <div class="d-flex align-items-center gap-3">
+                <input type="checkbox" id="est2" data-price="599" data-time="45" checked>
+                <label for="est2" class="mb-0 cursor-pointer">
+                  <strong>Royal Pedicure Spa</strong>
+                  <span class="d-block text-muted fs-13">Exfoliating foot soak &amp; scrub</span>
+                </label>
+              </div>
+              <span class="fw-bold text-pink">₹599</span>
+            </div>
+
+            <div class="estimator-item selected">
+              <div class="d-flex align-items-center gap-3">
+                <input type="checkbox" id="est3" data-price="699" data-time="45" checked>
+                <label for="est3" class="mb-0 cursor-pointer">
+                  <strong>Hair Blowout &amp; Styling</strong>
+                  <span class="d-block text-muted fs-13">Occasion waves or sleek dry</span>
+                </label>
+              </div>
+              <span class="fw-bold text-pink">₹699</span>
+            </div>
+
+            <div class="estimator-item">
+              <div class="d-flex align-items-center gap-3">
+                <input type="checkbox" id="est4" data-price="499" data-time="30">
+                <label for="est4" class="mb-0 cursor-pointer">
+                  <strong>Deluxe Manicure</strong>
+                  <span class="d-block text-muted fs-13">Nail shaping &amp; gel polish</span>
+                </label>
+              </div>
+              <span class="fw-bold text-pink">₹499</span>
+            </div>
+
+            <div class="estimator-item">
+              <div class="d-flex align-items-center gap-3">
+                <input type="checkbox" id="est5" data-price="1299" data-time="75">
+                <label for="est5" class="mb-0 cursor-pointer">
+                  <strong>Anti-Aging Lift Facial</strong>
+                  <span class="d-block text-muted fs-13">Collagen boosting firming care</span>
+                </label>
+              </div>
+              <span class="fw-bold text-pink">₹1,299</span>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-lg-6 reveal-on-scroll">
+          <div class="estimator-summary">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="eyebrow mb-0">Estimate Summary</span>
+              <span class="badge bg-pink text-white" id="estCount">3 services selected</span>
+            </div>
+            <h3 class="fw-bold mb-4" style="font-size:1.6rem">Custom Session Total</h3>
+
+            <div class="d-flex justify-content-between mb-2">
+              <span class="text-muted">Subtotal Price:</span>
+              <span class="fw-semibold" id="estSubtotal">₹2,197</span>
+            </div>
+
+            <div class="d-flex justify-content-between mb-2 text-success">
+              <span>Bundle Discount:</span>
+              <span class="fw-semibold" id="estDiscount">-₹329 (15% OFF)</span>
+            </div>
+
+            <div class="d-flex justify-content-between mb-3 text-muted fs-13">
+              <span>Estimated Duration:</span>
+              <span id="estDuration">150 mins total</span>
+            </div>
+
+            <hr style="border-color:var(--border)">
+
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <span class="fw-bold fs-5">Final Estimated Price:</span>
+              <span class="font-serif fw-bold fs-2 text-pink" id="estTotal">₹1,868</span>
+            </div>
+
+            <a href="booking.html" class="btn btn-primary w-100 btn-lg">Book Custom Bundle</a>
+            <p class="text-center text-muted fs-12 mb-0 mt-3"><i class="bi bi-shield-check me-1"></i> Includes sealed hygienic kit &amp; verified beautician travel.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: PRICING PROMISE & GUARANTEE -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="text-center reveal-on-scroll">
+        <span class="eyebrow">Our Commitment</span>
+        <h2 class="section-title centered">The BeautySpot Pricing Guarantee</h2>
+        <p class="section-lead">No hidden charges at your doorstep. What you see is what you pay.</p>
+      </div>
+
+      <div class="row g-4 style-grid" style="margin-top:32px">
+        <div class="col-lg-3 col-md-6 reveal-on-scroll">
+          <div class="feature-box text-center">
+            <div class="feature-icon"><i class="bi bi-cash-coin"></i></div>
+            <h4>Zero Hidden Travel Fees</h4>
+            <p>Travel and equipment setup costs are fully integrated into our flat rates.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 reveal-on-scroll">
+          <div class="feature-box text-center">
+            <div class="feature-icon"><i class="bi bi-shield-lock"></i></div>
+            <h4>Upfront Price Lock</h4>
+            <p>Your booking price is locked at checkout. No unexpected add-on costs.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 reveal-on-scroll">
+          <div class="feature-box text-center">
+            <div class="feature-icon"><i class="bi bi-arrow-counterclockwise"></i></div>
+            <h4>Free Rescheduling</h4>
+            <p>Need to shift your time? Reschedule up to 2 hours before your slot for free.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 reveal-on-scroll">
+          <div class="feature-box text-center">
+            <div class="feature-icon"><i class="bi bi-stars"></i></div>
+            <h4>Hygiene Guarantee</h4>
+            <p>Every service includes sealed single-use capes, towels, and sterilized tool kits.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: PRICING FAQ -->
+  <section class="section">
+    <div class="container">
+      <div class="split-2 reveal-on-scroll">
+        <div>
+          <span class="eyebrow">Good To Know</span>
+          <h2 class="section-title">Pricing FAQ &amp; Payment Options</h2>
+          <p class="section-lead">Have questions about travel coverage, custom packages, or payment methods? We've got answers.</p>
+          <div class="img-rounded" style="overflow:hidden;aspect-ratio:4/3;margin-top:24px;max-width:480px">
+            <img class="img-cover" src="assets/images/services/service-eye-makeup.png" alt="Beauty products and transparent pricing">
+          </div>
+        </div>
+        <div>
+          <div class="accordion" id="pricingFaq">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#pf1" aria-expanded="true" aria-controls="pf1">Are travel charges included in the listed prices?</button>
+              </h2>
+              <div id="pf1" class="accordion-collapse collapse show" data-bs-parent="#pricingFaq">
+                <div class="accordion-body">Yes! Listed rates include beautician doorstep visit and equipment setup for all standard coverage zones.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pf2" aria-expanded="false" aria-controls="pf2">How does the 15% Package Discount work?</button>
+              </h2>
+              <div id="pf2" class="accordion-collapse collapse" data-bs-parent="#pricingFaq">
+                <div class="accordion-body">When you select 3 or more treatments in a single appointment (or use our Interactive Price Estimator), an automatic 15% discount is applied to your entire session total.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pf3" aria-expanded="false" aria-controls="pf3">What payment methods do you accept?</button>
+              </h2>
+              <div id="pf3" class="accordion-collapse collapse" data-bs-parent="#pricingFaq">
+                <div class="accordion-body">We accept all major credit/debit cards, UPI (GPay, PhonePe, Paytm), Net Banking, and cash on completion.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pf4" aria-expanded="false" aria-controls="pf4">Can I pause or cancel my Beauty Pass membership?</button>
+              </h2>
+              <div id="pf4" class="accordion-collapse collapse" data-bs-parent="#pricingFaq">
+                <div class="accordion-body">Yes. Beauty Passes can be paused or cancelled anytime directly from your Customer Dashboard with zero cancellation fees.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: BOOKING CTA -->
+  <section class="cta-band">
+    <div class="deco-circle c1" aria-hidden="true"></div>
+    <div class="deco-circle c2" aria-hidden="true"></div>
+    <div class="container reveal-on-scroll">
+      <h2>Ready To Experience Doorstep Beauty Care?</h2>
+      <p>Choose your treatment or package and let our certified beauticians come to you.</p>
+      <a href="booking.html" class="btn btn-white">Book Appointment Now</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Beauty<span>Spot</span></a>
+        <p>Home salon &amp; beauty service on demand. Professional treatments delivered to your doorstep.</p>
+        <div class="social-links" style="margin-top:18px">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+        </div>
+      </div>
+      <div class="footer-col"><h5>Explore</h5>
+        <a href="about.html">About</a><a href="services.html">Services</a><a href="pricing.html">Pricing</a><a href="how-it-works.html">How It Works</a>
+      </div>
+      <div class="footer-col"><h5>Support</h5>
+        <a href="safety-standards.html">Safety Standards</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a href="blog.html">Blog</a>
+      </div>
+      <div class="footer-col"><h5>Account</h5>
+        <a href="login.html">Login</a><a href="register.html">Register</a><a href="customer-dashboard.html">Dashboard</a><a href="booking.html">Book Now</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 BeautySpot. All rights reserved.</span>
+      <span>Home Salon &amp; Beauty Service On Demand</span>
+    </div>
+  </div>
+</footer>
+
+<button type="button" id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

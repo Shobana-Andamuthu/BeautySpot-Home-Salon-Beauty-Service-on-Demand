@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How It Works — BeautySpot</title>
+  <meta name="description" content="Learn how BeautySpot home beauty booking works — from choosing a service to tracking your beautician and enjoying salon-quality care at home.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/responsive.css" rel="stylesheet">
+
+<script>
+  (function(){
+    var t=localStorage.getItem("bs_theme"), d=localStorage.getItem("bs_dir");
+    if(t==="dark") document.documentElement.setAttribute("data-theme","dark");
+    if(d==="rtl") document.documentElement.setAttribute("dir","rtl");
+  })();
+</script>
+</head>
+<body>
+
+<div id="preloader" class="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-logo">Beauty<span>Spot</span></div>
+    <div class="preloader-spinner"></div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Beauty<span>Spot</span></a>
+    <ul class="nav-desktop">
+      <li class="has-dropdown">
+        <a href="index.html" class="nav-home-trigger">Home <i class="bi bi-chevron-down"></i></a>
+        <div class="nav-dropdown">
+          <a href="index.html">Home 1</a>
+          <a href="home-2.html">Home 2</a>
+        </div>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="how-it-works.html">How It Works</a></li>
+
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="customer-dashboard.html">Dashboard</a></li>
+    </ul>
+    <div class="header-actions">
+      <div class="nav-controls">
+        <button type="button" class="nav-control-btn theme-toggle" aria-label="Toggle theme" title="Toggle Light/Dark Mode">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button type="button" class="nav-control-btn rtl-toggle" aria-label="Toggle layout direction" title="Toggle RTL/LTR">
+          <span class="rtl-label">RTL</span>
+        </button>
+      </div>
+      <a href="login.html" class="header-login">Login</a>
+      <a href="booking.html" class="btn btn-primary header-cta">Book Appointment</a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<nav class="mobile-nav" aria-label="Mobile">
+  <ul>
+    <li>
+      <button class="mobile-drop-toggle" aria-expanded="false">Home <i class="bi bi-chevron-down"></i></button>
+      <div class="mobile-sub">
+        <a href="index.html">Home 1</a>
+        <a href="home-2.html">Home 2</a>
+      </div>
+    </li>
+    <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="how-it-works.html">How It Works</a></li>
+
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="customer-dashboard.html">Dashboard</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="login.html">Login</a></li>
+  </ul>
+  <div class="mobile-nav-actions"><!-- mobile-nav-controls-added -->
+    <div class="nav-controls" style="justify-content:center;margin-bottom:14px">
+      <button type="button" class="nav-control-btn theme-toggle" aria-label="Toggle theme" title="Toggle Light/Dark Mode">
+        <i class="bi bi-moon-stars"></i>
+      </button>
+      <button type="button" class="nav-control-btn rtl-toggle" aria-label="Toggle layout direction" title="Toggle RTL/LTR">
+        <span class="rtl-label">RTL</span>
+      </button>
+    </div>
+    <a href="booking.html" class="btn btn-primary">Book Appointment</a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- SECTION 1: PAGE HERO -->
+  <section class="page-hero">
+    <div class="deco-circle" aria-hidden="true"></div>
+    <div class="container reveal-on-scroll">
+      <span class="eyebrow">Simple Booking</span>
+      <h1>How BeautySpot Works</h1>
+      <p class="section-lead" style="margin:0">Six clear steps from choosing a treatment to enjoying salon-quality beauty care at home.</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>How It Works</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: STEP 1–2 -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center reveal-on-scroll">
+        <span class="eyebrow">Getting Started</span>
+        <h2 class="section-title centered">Choose Your Service &amp; Time</h2>
+        <p class="section-lead">Begin with the look you want, then lock in a slot that fits your day.</p>
+      </div>
+      <div class="split-2 reveal-on-scroll" style="margin-top:48px">
+        <div class="img-rounded" style="overflow:hidden;border-radius:var(--radius-lg);aspect-ratio:4/3">
+          <img class="img-cover" src="assets/images/how-it-works/step1-browse.png" alt="Browsing beauty services menu">
+        </div>
+        <div>
+          <span class="eyebrow">Step 01</span>
+          <h3 class="section-title" style="font-size:1.75rem">Choose Service</h3>
+          <p>Pick from hair styling, glow facials, manicure &amp; pedicure, or bridal makeup. Each listing shows duration, inclusions, and starting price so you know exactly what to expect before you book.</p>
+          <ul class="icon-list" style="list-style:none;padding:0;margin-top:18px">
+            <li><i class="bi bi-check-circle-fill"></i><span>Curated home beauty menu with clear descriptions</span></li>
+            <li><i class="bi bi-check-circle-fill"></i><span>Filter by occasion, duration, or treatment type</span></li>
+            <li><i class="bi bi-check-circle-fill"></i><span>Add notes for skin type, hair length, or look preference</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="split-2 reveal-on-scroll" style="margin-top:64px">
+        <div>
+          <span class="eyebrow">Step 02</span>
+          <h3 class="section-title" style="font-size:1.75rem">Select Date &amp; Time</h3>
+          <p>Browse live availability across morning, afternoon, and evening windows. Same-day slots open when beauticians are nearby — perfect for last-minute glow-ups before an event.</p>
+          <ul class="icon-list" style="list-style:none;padding:0;margin-top:18px">
+            <li><i class="bi bi-check-circle-fill"></i><span>Real-time calendar with flexible time windows</span></li>
+            <li><i class="bi bi-check-circle-fill"></i><span>Same-day booking when capacity allows</span></li>
+            <li><i class="bi bi-check-circle-fill"></i><span>Reminders sent before your appointment</span></li>
+          </ul>
+        </div>
+        <div class="img-rounded" style="overflow:hidden;border-radius:var(--radius-lg);aspect-ratio:4/3">
+          <img class="img-cover" src="assets/images/how-it-works/step2-slot.png" alt="Selecting appointment date and time">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: STEP 3–4 -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="text-center reveal-on-scroll">
+        <span class="eyebrow">Your Visit Setup</span>
+        <h2 class="section-title centered">Share Your Address &amp; Get Matched</h2>
+        <p class="section-lead">We bring the salon to you — then pair you with the right verified specialist.</p>
+      </div>
+      <div class="split-2 reveal-on-scroll" style="margin-top:48px">
+        <div class="img-rounded" style="overflow:hidden;border-radius:var(--radius-lg);aspect-ratio:4/3">
+          <img class="img-cover" src="assets/images/how-it-works/step3-address.png" alt="Home beauty service address setup">
+        </div>
+        <div>
+          <span class="eyebrow">Step 03</span>
+          <h3 class="section-title" style="font-size:1.75rem">Enter Address</h3>
+          <p>Add your home or venue details so your beautician arrives prepared with the right kit, products, and setup. Landmark notes and parking tips help them find you smoothly.</p>
+          <ul class="icon-list" style="list-style:none;padding:0;margin-top:18px">
+            <li><i class="bi bi-geo-alt-fill"></i><span>Doorstep delivery across serviceable areas</span></li>
+            <li><i class="bi bi-geo-alt-fill"></i><span>Optional gate or building instructions</span></li>
+            <li><i class="bi bi-geo-alt-fill"></i><span>Saved addresses for faster rebooking</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="split-2 reveal-on-scroll" style="margin-top:64px">
+        <div>
+          <span class="eyebrow">Step 04</span>
+          <h3 class="section-title" style="font-size:1.75rem">Beautician Assigned</h3>
+          <p>Once your booking is confirmed, we assign a verified professional based on skill match, ratings, proximity, and availability — so you get the right expert for bridal glam, facials, hair, or nails.</p>
+          <ul class="icon-list" style="list-style:none;padding:0;margin-top:18px">
+            <li><i class="bi bi-person-check-fill"></i><span>Background-checked, trained home-service experts</span></li>
+            <li><i class="bi bi-person-check-fill"></i><span>Matched by specialty and appointment needs</span></li>
+            <li><i class="bi bi-person-check-fill"></i><span>Profile, rating, and specialty shared before arrival</span></li>
+          </ul>
+        </div>
+        <div class="img-rounded" style="overflow:hidden;border-radius:var(--radius-lg);aspect-ratio:4/3">
+          <img class="img-cover" src="assets/images/how-it-works/step4-beautician.png" alt="Verified beautician assigned to appointment">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: STEP 5–6 -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center reveal-on-scroll">
+        <span class="eyebrow">On The Day</span>
+        <h2 class="section-title centered">Track Arrival &amp; Enjoy Your Service</h2>
+        <p class="section-lead">Stay informed until your beautician knocks — then relax into your treatment.</p>
+      </div>
+      <div class="why-grid reveal-on-scroll" style="margin-top:48px">
+        <div class="why-feature">
+          <div class="deco-circle" aria-hidden="true"></div>
+          <h3>From booking to your finished look.</h3>
+          <p>Live tracking keeps you completely ready, and every scheduled appointment delivers flawless, salon-quality beauty results right in your home.</p>
+        </div>
+        <div class="why-item">
+          <div class="icon"><i class="bi bi-geo-alt"></i></div>
+          <div>
+            <h4>Track Arrival</h4>
+            <p>Receive live GPS tracking confirmation, real-time en-route map status,experience so our smart matching system can consistently connect instant arrival notifications so you can easily prepare your private home beauty area in complete peace. Know exactly when your assigned specialist will arrive.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="icon"><i class="bi bi-bell"></i></div>
+          <div>
+            <h4>Live Updates</h4>
+            <p>Automated instant SMS and real-time in-app status alerts keep you seamlessly informed at every appointment stage without needing to call support.notes for effortless, one-click rebooking on all your future appointments. Receive helpful reminders, specialist profile updates, and time estimates directly on your phone.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="icon"><i class="bi bi-heart-fill"></i></div>
+          <div>
+            <h4>Enjoy Service</h4>
+            <p>Your matched professional beautician sets up a fully sanitized, hospital-grade workstation and delivers your chosen beauty treatment with attentive, personal care. Sit back, relax, and experience luxury salon treatment without leaving home.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="icon"><i class="bi bi-house-heart"></i></div>
+          <div>
+            <h4>Home Comfort</h4>
+            <p>Skip salon waiting rooms, traffic commutes, and noisy environments. Relax in your familiar home ambiance with soft lighting, calming aromas, and focused one-on-one beauty care tailored specifically to your daily wellness routine.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="icon"><i class="bi bi-stars"></i></div>
+          <div>
+            <h4>Polished Finish</h4>
+            <p>From signature glow facials to hair styling and bridal glam, complete your home session feeling renewed, radiant, and completely camera-ready. Enjoy long-lasting beauty results crafted by verified industry professionals.</p>
+          </div>
+        </div>
+        
+      </div>
+      <div class="split-2 reveal-on-scroll" style="margin-top:56px">
+        <div class="img-rounded" style="overflow:hidden;border-radius:var(--radius-lg);aspect-ratio:4/3">
+          <img class="img-cover" src="assets/images/how-it-works/step5-treatment.png" alt="Enjoying facial treatment at home">
+        </div>
+        <div class="img-rounded" style="overflow:hidden;border-radius:var(--radius-lg);aspect-ratio:4/3">
+          <img class="img-cover" src="assets/images/how-it-works/step6-review.png" alt="Hair styling completed at home">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: BEAUTICIAN ASSIGNMENT -->
+  <section class="section bg-soft">
+    <div class="container">
+      <div class="experience-split reveal-on-scroll">
+        <div class="pro-spotlight-img">
+          <img class="img-cover" src="assets/images/professionals/kavita-sen.png" alt="BeautySpot beautician matching">
+          <div class="badge"><i class="bi bi-shield-check"></i> Verified Match</div>
+        </div>
+        <div>
+          <span class="eyebrow">Smart Matching</span>
+          <h2 class="section-title">How Beautician Assignment Works</h2>
+          <p class="section-lead">We do more than pick the next available professional — we match craft to your booking.</p>
+          <div class="include-grid" style="margin-top:28px">
+            <div class="include-item">
+              <i class="bi bi-award"></i>
+              <div>
+                <strong>Specialty Fit</strong>
+                <p>Bridal artists for bridal looks, skin specialists for facials, and certified nail experts for manicures. Every expert undergoes skill verification and hands-on testing for top salon-grade quality on every visit.</p>
+              </div>
+            </div>
+            <div class="include-item">
+              <i class="bi bi-star"></i>
+              <div>
+                <strong>Ratings &amp; Reliability</strong>
+                <p>High-rated beauticians with strong on-time arrival records and top hygiene scores are prioritized. We actively review client feedback after each session to maintain consistently high service standards.</p>
+              </div>
+            </div>
+            <div class="include-item">
+              <i class="bi bi-geo"></i>
+              <div>
+                <strong>Proximity &amp; Timing</strong>
+                <p>We balance travel distance, local routes, and live traffic data so your appointment slot stays realistic and completely stress-free. Your assigned expert arrives fully equipped with sterile tools right on schedule for your service.</p>
+              </div>
+            </div>
+            <div class="include-item">
+              <i class="bi bi-arrow-repeat"></i>
+              <div>
+                <strong>Preferred Pros</strong>
+                <p>Rebook your favorite beauticians whenever available so your beauty preferences stay consistent visit after visit. Build a long-term trusted relationship with specialists who understand your routine.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: APPOINTMENT TRACKING -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center reveal-on-scroll">
+        <span class="eyebrow">Live Status</span>
+        <h2 class="section-title centered">Appointment Tracking Flow</h2>
+        <p class="section-lead">Follow every stage from booking confirmed to service complete.</p>
+      </div>
+      <div class="split-2 reveal-on-scroll" style="margin-top:48px">
+        <div class="tracking-visual tracking-map-view" style="position:relative;width:100%;height:100%;min-height:420px;border-radius:var(--radius-lg);overflow:hidden">
+          <!-- Real Interactive Google Map Centered around Coimbatore, Tamil Nadu, India -->
+          <iframe title="Live Beautician Location Map - Coimbatore, Tamil Nadu, India" src="https://maps.google.com/maps?q=Coimbatore,%20Tamil%20Nadu,%20India&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" style="border:0;width:100%;height:100%;min-height:420px;border-radius:var(--radius-lg);" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <!-- Map Header Overlay Badge -->
+          <div class="map-header-badge" style="position:absolute;top:16px;left:16px;z-index:10;pointer-events:none">
+            <span class="pulse-dot"></span>
+            <strong>Live Beautician Tracker</strong>
+            <span class="eta-tag">ETA: 12 mins</span>
+          </div>
+        </div>
+        <div class="track-steps">
+          <div class="track-step done">
+            <div class="track-dot"><i class="bi bi-check-lg"></i></div>
+            <div>
+              <strong>Booking Confirmed</strong>
+              <span>Your slot is locked and payment details are secured.</span>
+            </div>
+          </div>
+          <div class="track-step done">
+            <div class="track-dot"><i class="bi bi-check-lg"></i></div>
+            <div>
+              <strong>Beautician Assigned</strong>
+              <span>Meet your matched professional and review their profile.</span>
+            </div>
+          </div>
+          <div class="track-step active">
+            <div class="track-dot"><i class="bi bi-circle-fill" style="font-size:8px"></i></div>
+            <div>
+              <strong>En Route</strong>
+              <span>Your beautician is heading to your address with a prepared kit.</span>
+            </div>
+          </div>
+          <div class="track-step">
+            <div class="track-dot">4</div>
+            <div>
+              <strong>Arrived</strong>
+              <span>Setup begins — sanitized tools ready for your treatment.</span>
+            </div>
+          </div>
+          <div class="track-step">
+            <div class="track-dot">5</div>
+            <div>
+              <strong>Service In Progress</strong>
+              <span>Relax while your look or ritual is completed with care.</span>
+            </div>
+          </div>
+          <div class="track-step">
+            <div class="track-dot">6</div>
+            <div>
+              <strong>Completed</strong>
+              <span>Rate your experience and rebook when you are ready.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: CTA -->
+  <section class="cta-band">
+    <div class="deco-circle c1" aria-hidden="true"></div>
+    <div class="deco-circle c2" aria-hidden="true"></div>
+    <div class="container reveal-on-scroll">
+      <h2>Ready To Book Your Home Beauty Visit?</h2>
+      <p>Choose a service, pick a time, and let a verified beautician come to you.</p>
+      <a href="booking.html" class="btn btn-white">Book An Appointment</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Beauty<span>Spot</span></a>
+        <p>Home salon & beauty service on demand. Professional treatments delivered to your doorstep.</p>
+        <div class="social-links" style="margin-top:18px">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+        </div>
+      </div>
+      <div class="footer-col"><h5>Explore</h5>
+        <a href="about.html">About</a><a href="services.html">Services</a><a href="pricing.html">Pricing</a><a href="how-it-works.html">How It Works</a>
+      </div>
+      <div class="footer-col"><h5>Support</h5>
+        <a href="safety-standards.html">Safety Standards</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a href="blog.html">Blog</a>
+      </div>
+      <div class="footer-col"><h5>Account</h5>
+        <a href="login.html">Login</a><a href="register.html">Register</a><a href="customer-dashboard.html">Dashboard</a><a href="booking.html">Book Now</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 BeautySpot. All rights reserved.</span>
+      <span>Home Salon & Beauty Service On Demand</span>
+    </div>
+  </div>
+</footer>
+
+<button type="button" id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

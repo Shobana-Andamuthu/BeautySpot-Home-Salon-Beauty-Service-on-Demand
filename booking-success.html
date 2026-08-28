@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Confirmed — BeautySpot</title>
+  <meta name="description" content="Your BeautySpot appointment is confirmed. View details, track arrival, and manage your booking.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/responsive.css" rel="stylesheet">
+
+<script>
+  (function(){
+    var t=localStorage.getItem("bs_theme"), d=localStorage.getItem("bs_dir");
+    if(t==="dark") document.documentElement.setAttribute("data-theme","dark");
+    if(d==="rtl") document.documentElement.setAttribute("dir","rtl");
+  })();
+</script>
+</head>
+<body class="page-booking-success">
+
+<div id="preloader" class="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-logo">Beauty<span>Spot</span></div>
+    <div class="preloader-spinner"></div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Beauty<span>Spot</span></a>
+    <ul class="nav-desktop">
+      <li class="has-dropdown">
+        <a href="index.html" class="nav-home-trigger">Home <i class="bi bi-chevron-down"></i></a>
+        <div class="nav-dropdown">
+          <a href="index.html">Home 1</a>
+          <a href="home-2.html">Home 2</a>
+        </div>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="how-it-works.html">How It Works</a></li>
+
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="customer-dashboard.html">Dashboard</a></li>
+    </ul>
+    <div class="header-actions">
+      <div class="nav-controls">
+        <button type="button" class="nav-control-btn theme-toggle" aria-label="Toggle theme" title="Toggle Light/Dark Mode">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button type="button" class="nav-control-btn rtl-toggle" aria-label="Toggle layout direction" title="Toggle RTL/LTR">
+          <span class="rtl-label">RTL</span>
+        </button>
+      </div>
+      <a href="login.html" class="header-login">Login</a>
+      <a href="booking.html" class="btn btn-primary header-cta">Book Appointment</a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<nav class="mobile-nav" aria-label="Mobile">
+  <ul>
+    <li>
+      <button class="mobile-drop-toggle" aria-expanded="false">Home <i class="bi bi-chevron-down"></i></button>
+      <div class="mobile-sub">
+        <a href="index.html">Home 1</a>
+        <a href="home-2.html">Home 2</a>
+      </div>
+    </li>
+    <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="how-it-works.html">How It Works</a></li>
+
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="customer-dashboard.html">Dashboard</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="login.html">Login</a></li>
+  </ul>
+  <div class="mobile-nav-actions"><!-- mobile-nav-controls-added -->
+    <div class="nav-controls" style="justify-content:center;margin-bottom:14px">
+      <button type="button" class="nav-control-btn theme-toggle" aria-label="Toggle theme" title="Toggle Light/Dark Mode">
+        <i class="bi bi-moon-stars"></i>
+      </button>
+      <button type="button" class="nav-control-btn rtl-toggle" aria-label="Toggle layout direction" title="Toggle RTL/LTR">
+        <span class="rtl-label">RTL</span>
+      </button>
+    </div>
+    <a href="booking.html" class="btn btn-primary">Book Appointment</a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- SECTION 1: SUCCESS HERO -->
+  <section class="page-hero">
+    <div class="deco-circle" aria-hidden="true"></div>
+    <div class="container reveal-on-scroll text-center">
+      <span class="eyebrow">Confirmed</span>
+      <h1>Your Appointment Is Confirmed!</h1>
+      <p class="section-lead">Booking ID <strong>BS-2026-8842</strong> — we have reserved your home beauty visit.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 2: CONFIRMATION DETAILS -->
+  <section class="section" style="padding-top:20px">
+    <div class="container">
+      <div class="success-card reveal-on-scroll" style="margin-top:0">
+        <div class="success-icon"><i class="bi bi-check-lg"></i></div>
+        <h2 style="font-size:1.6rem;margin-bottom:8px">Booking Details</h2>
+        <p>Save these details or view them anytime in your dashboard.</p>
+        <ul class="success-details" style="list-style:none;padding:24px;margin:28px 0">
+          <li><span>Booking ID</span><strong>BS-2026-8842</strong></li>
+          <li><span>Service</span><strong id="successService">Glow Facial</strong></li>
+          <li><span>Date</span><strong id="successDate">26 Aug 2026</strong></li>
+          <li><span>Time</span><strong id="successTime">04:30 PM</strong></li>
+          <li><span>Address</span><strong id="successAddress">12 Palm Residency, Bandra West, Mumbai</strong></li>
+          <li><span>Estimated Arrival</span><strong>15–20 minutes before slot</strong></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: BEAUTICIAN ASSIGNED -->
+  <section class="section bg-soft">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 reveal-on-scroll">
+          <div class="text-center">
+            <span class="eyebrow">Your Expert</span>
+            <h2 class="section-title centered">Beautician Assigned</h2>
+          </div>
+          <div class="beautician-row" style="max-width:480px;margin:28px auto 0">
+            <img src="assets/images/professionals/meera-sharma.png" alt="Meera Sharma">
+            <div>
+              <strong>Meera Sharma</strong>
+              <span style="display:block;font-size:13px;color:var(--muted)">Facial &amp; Skin · 4.9 ★ · 8 yrs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: WHAT'S NEXT -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center reveal-on-scroll">
+        <span class="eyebrow">Next Steps</span>
+        <h2 class="section-title centered">What's Next</h2>
+        <p class="section-lead">A clear path from confirmation to your finished look at home.</p>
+      </div>
+      <div class="timeline reveal-on-scroll" style="margin-top:40px">
+        <div class="timeline-step">
+          <h4>Confirmation SMS</h4>
+          <p>You will receive booking details and beautician profile shortly.</p>
+        </div>
+        <div class="timeline-step">
+          <h4>Prepare Your Space</h4>
+          <p>Clear a well-lit seating area and keep water handy for your visit.</p>
+        </div>
+        <div class="timeline-step">
+          <h4>Track Arrival</h4>
+          <p>Follow live status when your beautician is on the way.</p>
+        </div>
+        <div class="timeline-step">
+          <h4>Enjoy Your Service</h4>
+          <p>Relax while Meera delivers your Glow Facial at home.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: TRACKING PREVIEW -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 reveal-on-scroll">
+          <div class="text-center">
+            <span class="eyebrow">Live Status</span>
+            <h2 class="section-title centered">Tracking Preview</h2>
+            <p class="section-lead">Open your dashboard on appointment day to follow every milestone.</p>
+          </div>
+          <div class="tracking-visual" style="margin-top:28px">
+            <div class="map-pin"><i class="bi bi-geo-alt-fill"></i></div>
+          </div>
+          <div class="track-steps" id="successTrackPreview">
+            <div class="track-step done">
+              <div class="track-dot"><i class="bi bi-check"></i></div>
+              <div><strong>Booking Confirmed</strong><span>Completed</span></div>
+            </div>
+            <div class="track-step done">
+              <div class="track-dot"><i class="bi bi-check"></i></div>
+              <div><strong>Beautician Assigned</strong><span>Meera Sharma</span></div>
+            </div>
+            <div class="track-step active">
+              <div class="track-dot"><i class="bi bi-circle-fill" style="font-size:8px"></i></div>
+              <div><strong>On The Way</strong><span>Starts closer to your slot</span></div>
+            </div>
+            <div class="track-step">
+              <div class="track-dot">4</div>
+              <div><strong>Arrived</strong><span>Pending</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: SUPPORT INFO -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center reveal-on-scroll">
+          <span class="eyebrow">Support</span>
+          <h2 class="section-title centered">Need To Change Something?</h2>
+          <p class="section-lead">Reschedule or cancel from your dashboard up to 2 hours before the visit, or contact us at <a href="tel:+919876543210">+91 98765 43210</a> / <a href="mailto:hello@beautyspot.in">hello@beautyspot.in</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: ACTION BUTTONS CTA -->
+  <section class="cta-band">
+    <div class="deco-circle c1" aria-hidden="true"></div>
+    <div class="deco-circle c2" aria-hidden="true"></div>
+    <div class="container reveal-on-scroll">
+      <h2>Manage Your Appointment</h2>
+      <p>Track arrival, view history, or return to your customer dashboard.</p>
+      <div class="btn-group-gap" style="justify-content:center;flex-wrap:wrap">
+        <a href="customer-dashboard.html" class="btn btn-white">Track</a>
+        <a href="booking-history.html" class="btn btn-outline-white">View Booking</a>
+        <a href="customer-dashboard.html" class="btn btn-outline-white">Go To Dashboard</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Beauty<span>Spot</span></a>
+        <p>Home salon & beauty service on demand. Professional treatments delivered to your doorstep.</p>
+        <div class="social-links" style="margin-top:18px">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+        </div>
+      </div>
+      <div class="footer-col"><h5>Explore</h5>
+        <a href="about.html">About</a><a href="services.html">Services</a><a href="pricing.html">Pricing</a><a href="how-it-works.html">How It Works</a>
+      </div>
+      <div class="footer-col"><h5>Support</h5>
+        <a href="safety-standards.html">Safety Standards</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a href="blog.html">Blog</a>
+      </div>
+      <div class="footer-col"><h5>Account</h5>
+        <a href="login.html">Login</a><a href="register.html">Register</a><a href="customer-dashboard.html">Dashboard</a><a href="booking.html">Book Now</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 BeautySpot. All rights reserved.</span>
+      <span>Home Salon & Beauty Service On Demand</span>
+    </div>
+  </div>
+</footer>
+
+<button type="button" id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

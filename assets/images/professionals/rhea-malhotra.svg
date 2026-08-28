@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+    <defs>
+      <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FCE8F1"/>
+        <stop offset="100%" stop-color="#FFF5F8"/>
+      </linearGradient>
+      <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#C92B70"/>
+        <stop offset="100%" stop-color="#C92B70"/>
+      </linearGradient>
+      <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+        <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#242024" flood-opacity="0.08"/>
+      </filter>
+    </defs>
+    <rect width="200" height="200" fill="url(#bgGrad)"/>
+    
+      <circle cx="100" cy="100" r="84" fill="url(#grad)" />
+      <circle cx="100" cy="84" r="40" fill="#FFF" opacity="0.9"/>
+      <path d="M 40 170 Q 100 110.00000000000001 160 170 Z" fill="#FFF" opacity="0.9"/>
+    
+    
+    
+    <text x="100" y="176" 
+          font-family="'Playfair Display', Georgia, serif" font-size="16" font-weight="700" 
+          fill="#242024" text-anchor="middle">Rhea</text>
+    
+    
+    <text x="100" y="190" 
+          font-family="'Poppins', sans-serif" font-size="12" font-weight="500" 
+          fill="#C92B70" letter-spacing="1" text-anchor="middle">AESTHETICIAN</text>
+    
+    <rect x="0" y="0" width="200" height="200" fill="none" stroke="#C92B70" stroke-width="1" opacity="0.15"/>
+  </svg>

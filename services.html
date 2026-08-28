@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty Services — Hair, Skin, Nails & Bridal | BeautySpot</title>
+  <meta name="description" content="Explore BeautySpot home beauty services: hair, skin, nails, bridal, makeup, and full home salon treatments.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/responsive.css" rel="stylesheet">
+
+<script>
+  (function(){
+    var t=localStorage.getItem("bs_theme"), d=localStorage.getItem("bs_dir");
+    if(t==="dark") document.documentElement.setAttribute("data-theme","dark");
+    if(d==="rtl") document.documentElement.setAttribute("dir","rtl");
+  })();
+</script>
+</head>
+<body>
+
+<div id="preloader" class="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-logo">Beauty<span>Spot</span></div>
+    <div class="preloader-spinner"></div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Beauty<span>Spot</span></a>
+    <ul class="nav-desktop">
+      <li class="has-dropdown">
+        <a href="index.html" class="nav-home-trigger">Home <i class="bi bi-chevron-down"></i></a>
+        <div class="nav-dropdown">
+          <a href="index.html">Home 1</a>
+          <a href="home-2.html">Home 2</a>
+        </div>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="how-it-works.html">How It Works</a></li>
+
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="customer-dashboard.html">Dashboard</a></li>
+    </ul>
+    <div class="header-actions">
+      <div class="nav-controls">
+        <button type="button" class="nav-control-btn theme-toggle" aria-label="Toggle theme" title="Toggle Light/Dark Mode">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button type="button" class="nav-control-btn rtl-toggle" aria-label="Toggle layout direction" title="Toggle RTL/LTR">
+          <span class="rtl-label">RTL</span>
+        </button>
+      </div>
+      <a href="login.html" class="header-login">Login</a>
+      <a href="booking.html" class="btn btn-primary header-cta">Book Appointment</a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<nav class="mobile-nav" aria-label="Mobile">
+  <ul>
+    <li>
+      <button class="mobile-drop-toggle" aria-expanded="false">Home <i class="bi bi-chevron-down"></i></button>
+      <div class="mobile-sub">
+        <a href="index.html">Home 1</a>
+        <a href="home-2.html">Home 2</a>
+      </div>
+    </li>
+    <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="how-it-works.html">How It Works</a></li>
+
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="customer-dashboard.html">Dashboard</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="login.html">Login</a></li>
+  </ul>
+  <div class="mobile-nav-actions"><!-- mobile-nav-controls-added -->
+    <div class="nav-controls" style="justify-content:center;margin-bottom:14px">
+      <button type="button" class="nav-control-btn theme-toggle" aria-label="Toggle theme" title="Toggle Light/Dark Mode">
+        <i class="bi bi-moon-stars"></i>
+      </button>
+      <button type="button" class="nav-control-btn rtl-toggle" aria-label="Toggle layout direction" title="Toggle RTL/LTR">
+        <span class="rtl-label">RTL</span>
+      </button>
+    </div>
+    <a href="booking.html" class="btn btn-primary">Book Appointment</a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- SECTION 1: PAGE HERO -->
+  <section class="page-hero">
+    <div class="deco-circle" aria-hidden="true"></div>
+    <div class="container reveal-on-scroll">
+      <span class="eyebrow">Our Menu</span>
+      <h1>Beauty Services At Home</h1>
+      <p class="section-lead">Hair, skin, nails, bridal, and makeup — booked around your day and delivered to your doorstep.</p>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Services</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- SECTION 2: SERVICE CATEGORIES -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center reveal-on-scroll">
+        <span class="eyebrow">Categories</span>
+        <h2 class="section-title centered">Choose Your Beauty Focus.</h2>
+        <p class="section-lead">Browse by category or filter to find the treatment that fits your moment.</p>
+      </div>
+      <div class="filter-bar reveal-on-scroll" data-target=".service-cat-card" style="justify-content:center;margin-top:32px">
+        <button type="button" class="filter-btn active" data-filter="all">All</button>
+        <button type="button" class="filter-btn" data-filter="hair">Hair</button>
+        <button type="button" class="filter-btn" data-filter="skin">Skin</button>
+        <button type="button" class="filter-btn" data-filter="nails">Nails</button>
+        <button type="button" class="filter-btn" data-filter="bridal">Bridal</button>
+        <button type="button" class="filter-btn" data-filter="makeup">Makeup</button>
+        <button type="button" class="filter-btn" data-filter="home">Home Beauty</button>
+      </div>
+      
+      
+      <div class="services-editorial" style="margin-top:24px">
+        <!-- HAIR CATEGORY (4 cards) -->
+        <a href="service-details.html" class="service-tile with-image service-cat-card" data-category="hair">
+          <div class="tile-img"><img src="assets/images/unique-variants/services/service-hair-styling-variant-7.jpg" alt="Hair Styling" decoding="async" loading="eager"></div>
+          <div class="tile-body">
+            <h3>Hair Styling</h3>
+            <p>Blow dry, soft waves, and occasion styling at home.</p>
+            <span class="service-link">View Details <i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="service-details.html" class="service-tile with-image service-cat-card" data-category="hair">
+          <div class="tile-img"><img src="assets/images/unique-variants/services/service-hair-spa-variant-2.jpg" alt="Hair Spa" decoding="async" loading="eager"></div>
+          <div class="tile-body">
+            <h3>Nourishing Hair Spa</h3>
+            <p>Scalp massage & intensive cream mask ritual.</p>
+            <span class="service-link">View Details <i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="service-details.html" class="service-tile with-image service-cat-card" data-category="hair">
+          <div class="tile-img"><img src="assets/images/unique-variants/services/service-haircut-variant-4.jpg" alt="Precision Haircut" decoding="async" loading="eager"></div>
+          <div class="tile-body">
+            <h3>Precision Haircut</h3>
+            <p>Clean trims and shape refreshes by senior stylists.</p>
+            <span class="service-link">View Details <i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="service-details.html" class="service-tile with-image service-cat-card" data-category="hair">
+          <div class="tile-img"><img src="assets/images/services/service-hair-color.png" alt="Gloss Hair Color" decoding="async" loading="eager"></div>
+          <div class="tile-body">
+            <h3>Gloss Hair Color</h3>
+            <p>Root touch-up and balayage with ammonia-free formulas.</p>
+            <span class="service-link">View Details <i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- SKIN CATEGORY (4 cards) -->
+        <a href="service-details.html" class="service-tile with-image service-cat-card" data-category="skin">
+          <div class="tile-img"><img src="assets/images/unique-variants/services/service-glow-facial-variant-5.jpg" alt="Signature Glow Facial" decoding="async" loading="eager"></div>
+          <div class="tile-body">
+            <h3>Signature Glow Facial</h3>
+            <p>Cleanse, massager, and hydrating mask for radiant skin.</p>
+            <span class="service-link">View Details <i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="service-details.html" class="service-tile with-image service-cat-card" data-category="skin">
+          <div class="tile-img"><img src="assets/images/unique-variants/services/service-skin-cleanup-variant-5.jpg" alt="Pore Skin Cleanup" decoding="async" loading="eager"></div>
+          <div class="tile-body">
+            <h3>Pore Skin Cleanup</h3>
+            <p>Gentle extraction and scrub for congested skin.</p>
+            <span class="service-link">View Details <i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="service-details.html" class="service-tile with-image service-cat-card" data-category="skin">
+          <div class="tile-img"><img src="assets/images/unique-variants/services/service-anti-aging-variant-4.jpg" alt="Anti-Aging Lift Facial" decoding="async" loading="eager"></div>
+          <div class="tile-body">
+            <h3>Anti-Aging Lift Facial</h3>
+            <p>Firming care for fine lines and skin elasticity.</p>
+            <span class="service-link">View Details <i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="service-details.html" class="service-tile with-image service-cat-card" data-category="skin">
+          <div class="tile-img"><img src="assets/images/unique-variants/services/service-detox-cleanup-variant-3.jpg" alt="Organic Skin Detox" decoding="async" loading="eager"></div>
+          <div class="tile-body">
+            <h3>Organic Skin Detox</h3>
+            <p>Botanical mask and collagen boosting therapy.</p>
+            <span class="service-link">View Details <i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- NAILS CATEGORY (4 cards) -->
+        <a href="service-details.html" class="service-tile with-image service-cat-card" data-category="nails">
+          <div class="tile-img"><img src="assets/images/unique-variants/services/service-manicure-variant-6.jpg" alt="Deluxe Manicure" decoding="async" loading="eager"></div>
+          <div class="tile-body">
+            <h3>Deluxe Manicure</h3>
+            <p>Nail shaping, cuticle care, and gel polish finish.</p>
+            <span class="service-link">View Details <i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="service-details.html" class="service-tile with-image service-cat-card" data-category="nails">
+          <div class="tile-img"><img src="assets/images/unique-variants/services/service-pedicure-variant-4.jpg" alt="Royal Pedicure Spa" decoding="async" loading="eager"></div>
+          <div class="tile-body">
+            <h3>Royal Pedicure Spa</h3>
+            <p>Warm foot soak, scrub, and massage at home.</p>
+            <span class="service-link">View Details <i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="service-details.html" class="service-tile with-image service-cat-card" data-category="nails">
+          <div class="tile-img"><img src="assets/images/unique-variants/services/service-gel-nails-variant-2.jpg" alt="Gel Nail Art" decoding="async" loading="eager"></div>
+          <div class="tile-body">
+            <h3>Gel Nail Art</h3>
+            <p>Long-wear gel colors and custom nail art designs.</p>
+            <span class="service-link">View Details <i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="service-details.html" class="service-tile with-image service-cat-card" data-category="nails">
+          <div class="tile-img"><img src="assets/images/unique-variants/services/acrylic-nail-extensions-variant-2.jpg" alt="Acrylic Extensions" decoding="async" loading="eager"></div>
+          <div class="tile-body">
+            <h3>Acrylic Extensions</h3>
+            <p>Full set nail extensions with custom tips.</p>
+            <span class="service-link">View Details <i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- BRIDAL CATEGORY (4 cards) -->
+        <a href="service-details.html" class="service-tile with-image service-cat-card" data-category="bridal">
+          <div class="tile-img"><img src="assets/images/unique-variants/services/service-bridal-makeup-variant-7.jpg" alt="HD Bridal Makeup" decoding="async" loading="eager"></div>
+          <div class="tile-body">
+            <h3>HD Bridal Makeup</h3>
+            <p>Flawless HD airbrush makeup, trial session, and long-lasting glow for your big wedding day.</p>
+            <span class="service-link">View Details <i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="service-details.html" class="service-tile with-image service-cat-card" data-category="bridal">
+          <div class="tile-img"><img src="assets/images/services/service-deluxe-bridal.png" alt="Deluxe Wedding Package" decoding="async" loading="eager"></div>
+          <div class="tile-body">
+            <h3>Deluxe Wedding Package</h3>
+            <p>Complete bridal makeup, hair styling, veil draping, and pre-bridal skin therapy ritual.</p>
+            <span class="service-link">View Details <i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="service-details.html" class="service-tile with-image service-cat-card" data-category="bridal">
+          <div class="tile-img"><img src="assets/images/unique-variants/services/service-prebridal-variant-2.jpg" alt="Pre-Bridal Skin Ritual" decoding="async" loading="eager"></div>
+          <div class="tile-body">
+            <h3>Pre-Bridal Skin Ritual</h3>
+            <p>Exfoliating skin polish and deep hydrating face therapy 3 days before your wedding week.</p>
+            <span class="service-link">View Details <i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="service-details.html" class="service-tile with-image service-cat-card" data-category="bridal">
+          <div class="tile-img"><img src="assets/images/services/bridal-dupatta-draping.png" alt="Sangeet & Reception Glam" decoding="async" loading="eager"></div>
+          <div class="tile-body">
+            <h3>Sangeet &amp; Reception Glam</h3>
+            <p>Vibrant festive evening makeup and custom hair styling for your celebration events.</p>
+            <span class="service-link">View Details <i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- MAKEUP CATEGORY (4 cards) -->
+        <a href="service-details.html" class="service-tile with-image service-cat-card" data-category="makeup">
+          <div class="tile-img"><img src="assets/images/unique-variants/services/service-party-makeup-variant-2.jpg" alt="Party Evening Makeup" decoding="async" loading="eager"></div>
+          <div class="tile-body">
+            <h3>Party Evening Makeup</h3>
+            <p>Glamorous makeup with contour &amp; falsies.</p>
+            <span class="service-link">View Details <i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="service-details.html" class="service-tile with-image service-cat-card" data-category="makeup">
+          <div class="tile-img"><img src="assets/images/unique-variants/services/service-express-glam-variant-3.jpg" alt="Express 45-Min Glam" decoding="async" loading="eager"></div>
+          <div class="tile-body">
+            <h3>Express 45-Min Glam</h3>
+            <p>Quick party touchup for instant event readiness.</p>
+            <span class="service-link">View Details <i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="service-details.html" class="service-tile with-image service-cat-card" data-category="makeup">
+          <div class="tile-img"><img src="assets/images/unique-variants/services/service-nude-glam-variant-2.jpg" alt="Soft Nude Everyday Glam" decoding="async" loading="eager"></div>
+          <div class="tile-body">
+            <h3>Soft Nude Everyday Glam</h3>
+            <p>Subtle, glowing makeup for special dinners.</p>
+            <span class="service-link">View Details <i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="service-details.html" class="service-tile with-image service-cat-card" data-category="makeup">
+          <div class="tile-img"><img src="assets/images/unique-variants/services/service-eye-makeup-variant-2.jpg" alt="Eye & Lip Makeup Focus" decoding="async" loading="eager"></div>
+          <div class="tile-body">
+            <h3>Eye &amp; Lip Makeup Focus</h3>
+            <p>Smokey eyes or bold lip with base perfection.</p>
+            <span class="service-link">View Details <i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- HOME BEAUTY CATEGORY (4 cards) -->
+        <a href="service-details.html" class="service-tile with-image service-cat-card" data-category="home">
+          <div class="tile-img"><img src="assets/images/unique-variants/services/service-body-polishing-variant-2.jpg" alt="Full Body Polishing" decoding="async" loading="eager"></div>
+          <div class="tile-body">
+            <h3>Full Body Polishing</h3>
+            <p>Deep scrub and moisturizing oil massage.</p>
+            <span class="service-link">View Details <i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="service-details.html" class="service-tile with-image service-cat-card" data-category="home">
+          <div class="tile-img"><img src="assets/images/unique-variants/services/service-prebridal-variant-3.jpg" alt="Gentle Threading & Waxing" decoding="async" loading="eager"></div>
+          <div class="tile-body">
+            <h3>Gentle Threading &amp; Waxing</h3>
+            <p>Hygienic honey wax and organic thread finish.</p>
+            <span class="service-link">View Details <i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="service-details.html" class="service-tile with-image service-cat-card" data-category="home">
+          <div class="tile-img"><img src="assets/images/unique-variants/services/service-hair-botox-variant-2.jpg" alt="Hair Botox & Repair" decoding="async" loading="eager"></div>
+          <div class="tile-body">
+            <h3>Hair Botox &amp; Repair</h3>
+            <p>Keratin restructuring treatment in your room.</p>
+            <span class="service-link">View Details <i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="service-details.html" class="service-tile with-image service-cat-card" data-category="home">
+          <div class="tile-img"><img src="assets/images/unique-variants/services/service-detail-hero-variant-2.jpg" alt="Head & Shoulder Massage" decoding="async" loading="eager"></div>
+          <div class="tile-body">
+            <h3>Head &amp; Shoulder Massage</h3>
+            <p>Stress relief herbal oil relaxation ritual.</p>
+            <span class="service-link">View Details <i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+      </div>
+
+      <!-- PAGINATION CONTAINER FOR CATEGORY CARDS -->
+      <div class="pagination-wrapper" id="servicesPagination"></div>
+    </div>
+  </section>
+
+  <!-- NEW SECTION 3: SIGNATURE BEAUTY BUNDLES -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="text-center reveal-on-scroll">
+        <span class="eyebrow">Curated Packages</span>
+        <h2 class="section-title centered">Signature Beauty Bundles</h2>
+        <p class="section-lead">Combine your favorite treatments for extra pampering and exclusive savings.</p>
+      </div>
+      <div class="row g-4 justify-content-center" style="margin-top:36px">
+        <div class="col-lg-4 col-md-6 reveal-on-scroll">
+          <div class="bundle-card">
+            <span class="bundle-badge bg-pink text-white">Save 20%</span>
+            <div class="bundle-head">
+              <h3>Weekend Pamper Ritual</h3>
+              <p>Ideal for routine glow &amp; relaxation</p>
+              <div class="bundle-price">₹1,799 <span class="old-price">₹2,299</span></div>
+            </div>
+            <ul class="bundle-features">
+              <li><i class="bi bi-check-circle-fill text-pink"></i> Signature Glow Facial (60 min)</li>
+              <li><i class="bi bi-check-circle-fill text-pink"></i> Deluxe Manicure &amp; Polish</li>
+              <li><i class="bi bi-check-circle-fill text-pink"></i> Head &amp; Shoulder Massage</li>
+              <li><i class="bi bi-check-circle-fill text-pink"></i> Sealed Hygienic Tool Kit</li>
+            </ul>
+            <a href="booking.html" class="btn btn-primary w-100">Book Package</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal-on-scroll">
+          <div class="bundle-card featured-bundle">
+            <span class="bundle-badge bg-dark text-white">Most Popular</span>
+            <div class="bundle-head">
+              <h3>Bridal Pre-Glow Deluxe</h3>
+              <p>Complete wedding prep &amp; skin polish</p>
+              <div class="bundle-price">₹4,499 <span class="old-price">₹5,999</span></div>
+            </div>
+            <ul class="bundle-features">
+              <li><i class="bi bi-check-circle-fill text-pink"></i> Anti-Aging &amp; Collagen Lift Facial</li>
+              <li><i class="bi bi-check-circle-fill text-pink"></i> Royal Pedicure &amp; Manicure Spa</li>
+              <li><i class="bi bi-check-circle-fill text-pink"></i> Full Body Exfoliating Polish</li>
+              <li><i class="bi bi-check-circle-fill text-pink"></i> Senior Beautician Assigned</li>
+            </ul>
+            <a href="booking.html" class="btn btn-primary w-100">Book Package</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal-on-scroll">
+          <div class="bundle-card">
+            <span class="bundle-badge bg-pink text-white">Save 15%</span>
+            <div class="bundle-head">
+              <h3>Express Self-Care Trio</h3>
+              <p>Quick refresh before any event</p>
+              <div class="bundle-price">₹1,299 <span class="old-price">₹1,599</span></div>
+            </div>
+            <ul class="bundle-features">
+              <li><i class="bi bi-check-circle-fill text-pink"></i> Express Blow Dry &amp; Hair Styling</li>
+              <li><i class="bi bi-check-circle-fill text-pink"></i> Pore Skin Cleanup Ritual</li>
+              <li><i class="bi bi-check-circle-fill text-pink"></i> Gentle Threading / Wax Touchup</li>
+              <li><i class="bi bi-check-circle-fill text-pink"></i> 45-Min Express Delivery</li>
+            </ul>
+            <a href="booking.html" class="btn btn-primary w-100">Book Package</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW SECTION 4: HYGIENE & QUALITY GUARANTEE -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center reveal-on-scroll">
+        <span class="eyebrow">The BeautySpot Guarantee</span>
+        <h2 class="section-title centered">Why Guests Love Our Doorstep Service</h2>
+        <p class="section-lead">We set the gold standard in luxury home salon hygiene, safety, and craft.</p>
+      </div>
+      <div class="row g-4" style="margin-top:36px">
+        <div class="col-lg-3 col-md-6 reveal-on-scroll">
+          <div class="feature-box text-center">
+            <div class="feature-icon"><i class="bi bi-shield-check"></i></div>
+            <h4>100% Sterilized Kits</h4>
+            <p>Single-use disposables and sealed equipment opened right in front of you.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 reveal-on-scroll">
+          <div class="feature-box text-center">
+            <div class="feature-icon"><i class="bi bi-person-badge"></i></div>
+            <h4>Verified Experts</h4>
+            <p>Background-checked, certified beauticians with minimum 5+ years experience.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 reveal-on-scroll">
+          <div class="feature-box text-center">
+            <div class="feature-icon"><i class="bi bi-flower1"></i></div>
+            <h4>Premium Organic Products</h4>
+            <p>Dermatologically tested, cruelty-free luxury skincare &amp; hair formulas.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 reveal-on-scroll">
+          <div class="feature-box text-center">
+            <div class="feature-icon"><i class="bi bi-clock-history"></i></div>
+            <h4>Punctual Doorstep Arrival</h4>
+            <p>Live tracking and guaranteed on-time service at your preferred slot.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Stats banner -->
+      <div class="stats-banner reveal-on-scroll" style="margin-top:48px">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-num" data-count="15000" data-suffix="+">15,000+</div>
+            <div class="stat-label">Home Appointments Delivered</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-count="4" data-suffix=".9 ★">4.9 ★</div>
+            <div class="stat-label">Average Customer Rating</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-count="120" data-suffix="+">120+</div>
+            <div class="stat-label">Certified Beauticians</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-count="100" data-suffix="%">100%</div>
+            <div class="stat-label">Hygiene Guarantee</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: POPULAR TREATMENTS -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="text-center reveal-on-scroll">
+        <span class="eyebrow">Most Booked</span>
+        <h2 class="section-title centered">Popular Treatments</h2>
+        <p class="section-lead">Guest favorites with transparent starting prices — ready to book today.</p>
+      </div>
+      <div class="table-responsive reveal-on-scroll" style="margin-top:40px">
+        <table class="price-table">
+          <thead>
+            <tr>
+              <th>Treatment</th>
+              <th>Category</th>
+              <th>Duration</th>
+              <th>From</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Glow Facial</td>
+              <td>Skin</td>
+              <td>60–75 min</td>
+              <td class="price">₹899</td>
+              <td><a href="service-details.html" class="service-link">Details</a></td>
+            </tr>
+            <tr>
+              <td>Hair Styling</td>
+              <td>Hair</td>
+              <td>45–60 min</td>
+              <td class="price">₹699</td>
+              <td><a href="service-details.html" class="service-link">Details</a></td>
+            </tr>
+            <tr>
+              <td>Manicure</td>
+              <td>Nails</td>
+              <td>40–50 min</td>
+              <td class="price">₹499</td>
+              <td><a href="service-details.html" class="service-link">Details</a></td>
+            </tr>
+            <tr>
+              <td>Pedicure</td>
+              <td>Nails</td>
+              <td>50–60 min</td>
+              <td class="price">₹599</td>
+              <td><a href="service-details.html" class="service-link">Details</a></td>
+            </tr>
+            <tr>
+              <td>Bridal Makeup</td>
+              <td>Bridal</td>
+              <td>90–120 min</td>
+              <td class="price">₹7,999+</td>
+              <td><a href="service-details.html" class="service-link">Details</a></td>
+            </tr>
+            <tr>
+              <td>Party Makeup</td>
+              <td>Makeup</td>
+              <td>60–75 min</td>
+              <td class="price">₹2,499</td>
+              <td><a href="service-details.html" class="service-link">Details</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="text-center" style="margin-top:28px">
+        <a href="pricing.html" class="btn btn-outline">See Full Pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: BOOKING CTA -->
+  <section class="cta-band">
+    <div class="deco-circle c1" aria-hidden="true"></div>
+    <div class="deco-circle c2" aria-hidden="true"></div>
+    <div class="container reveal-on-scroll">
+      <h2>Find Your Treatment. Book Your Slot.</h2>
+      <p>Tell us what you need and when — a verified beautician will come to you.</p>
+      <a href="booking.html" class="btn btn-white">Book Appointment</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Beauty<span>Spot</span></a>
+        <p>Home salon & beauty service on demand. Professional treatments delivered to your doorstep.</p>
+        <div class="social-links" style="margin-top:18px">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+        </div>
+      </div>
+      <div class="footer-col"><h5>Explore</h5>
+        <a href="about.html">About</a><a href="services.html">Services</a><a href="pricing.html">Pricing</a><a href="how-it-works.html">How It Works</a>
+      </div>
+      <div class="footer-col"><h5>Support</h5>
+        <a href="safety-standards.html">Safety Standards</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a href="blog.html">Blog</a>
+      </div>
+      <div class="footer-col"><h5>Account</h5>
+        <a href="login.html">Login</a><a href="register.html">Register</a><a href="customer-dashboard.html">Dashboard</a><a href="booking.html">Book Now</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 BeautySpot. All rights reserved.</span>
+      <span>Home Salon & Beauty Service On Demand</span>
+    </div>
+  </div>
+</footer>
+
+<button type="button" id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

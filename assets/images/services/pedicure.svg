@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+    <defs>
+      <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFF5F8"/>
+        <stop offset="100%" stop-color="#FCE8F1"/>
+      </linearGradient>
+      <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#E83E8C"/>
+        <stop offset="100%" stop-color="#C92B70"/>
+      </linearGradient>
+      <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+        <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#242024" flood-opacity="0.08"/>
+      </filter>
+    </defs>
+    <rect width="800" height="600" fill="url(#bgGrad)"/>
+    
+      <circle cx="640" cy="120" r="240" fill="#E83E8C" opacity="0.08"/>
+      <circle cx="120" cy="510" r="200" fill="#E83E8C" opacity="0.06"/>
+      <path d="M 0,420 Q 400,240 800,480 L 800,600 L 0,600 Z" fill="#E83E8C" opacity="0.05"/>
+    
+    
+    <g transform="translate(372, 132) scale(2.2)">
+      <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" fill="#E83E8C"/>
+    </g>
+  
+    
+    <text x="400" y="390" 
+          font-family="'Playfair Display', Georgia, serif" font-size="36" font-weight="700" 
+          fill="#242024" text-anchor="middle">Royal Foot Spa & Pedicure</text>
+    
+    
+    <text x="400" y="456" 
+          font-family="'Poppins', sans-serif" font-size="19.2" font-weight="500" 
+          fill="#E83E8C" letter-spacing="1" text-anchor="middle">SOAK, SCRUB & GEL FINISH</text>
+    
+    <rect x="0" y="0" width="800" height="600" fill="none" stroke="#E83E8C" stroke-width="1" opacity="0.15"/>
+  </svg>

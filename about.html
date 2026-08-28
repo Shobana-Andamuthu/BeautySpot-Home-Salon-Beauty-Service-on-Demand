@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About BeautySpot — Home Salon & Beauty On Demand</title>
+  <meta name="description" content="Learn about BeautySpot — our story, mission, vision, and professional standards for premium home beauty services.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/responsive.css" rel="stylesheet">
+
+<script>
+  (function(){
+    var t=localStorage.getItem("bs_theme"), d=localStorage.getItem("bs_dir");
+    if(t==="dark") document.documentElement.setAttribute("data-theme","dark");
+    if(d==="rtl") document.documentElement.setAttribute("dir","rtl");
+  })();
+</script>
+</head>
+<body>
+
+<div id="preloader" class="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-logo">Beauty<span>Spot</span></div>
+    <div class="preloader-spinner"></div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Beauty<span>Spot</span></a>
+    <ul class="nav-desktop">
+      <li class="has-dropdown">
+        <a href="index.html" class="nav-home-trigger">Home <i class="bi bi-chevron-down"></i></a>
+        <div class="nav-dropdown">
+          <a href="index.html">Home 1</a>
+          <a href="home-2.html">Home 2</a>
+        </div>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="how-it-works.html">How It Works</a></li>
+
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="customer-dashboard.html">Dashboard</a></li>
+    </ul>
+    <div class="header-actions">
+      <div class="nav-controls">
+        <button type="button" class="nav-control-btn theme-toggle" aria-label="Toggle theme" title="Toggle Light/Dark Mode">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button type="button" class="nav-control-btn rtl-toggle" aria-label="Toggle layout direction" title="Toggle RTL/LTR">
+          <span class="rtl-label">RTL</span>
+        </button>
+      </div>
+      <a href="login.html" class="header-login">Login</a>
+      <a href="booking.html" class="btn btn-primary header-cta">Book Appointment</a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<nav class="mobile-nav" aria-label="Mobile">
+  <ul>
+    <li>
+      <button class="mobile-drop-toggle" aria-expanded="false">Home <i class="bi bi-chevron-down"></i></button>
+      <div class="mobile-sub">
+        <a href="index.html">Home 1</a>
+        <a href="home-2.html">Home 2</a>
+      </div>
+    </li>
+    <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="how-it-works.html">How It Works</a></li>
+
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="customer-dashboard.html">Dashboard</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="login.html">Login</a></li>
+  </ul>
+  <div class="mobile-nav-actions"><!-- mobile-nav-controls-added -->
+    <div class="nav-controls" style="justify-content:center;margin-bottom:14px">
+      <button type="button" class="nav-control-btn theme-toggle" aria-label="Toggle theme" title="Toggle Light/Dark Mode">
+        <i class="bi bi-moon-stars"></i>
+      </button>
+      <button type="button" class="nav-control-btn rtl-toggle" aria-label="Toggle layout direction" title="Toggle RTL/LTR">
+        <span class="rtl-label">RTL</span>
+      </button>
+    </div>
+    <a href="booking.html" class="btn btn-primary">Book Appointment</a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- SECTION 1: PAGE HERO -->
+  <section class="page-hero">
+    <div class="deco-circle" aria-hidden="true"></div>
+    <div class="container reveal-on-scroll">
+      <span class="eyebrow">Who We Are</span>
+      <h1>About BeautySpot</h1>
+      <p class="section-lead">Premium home salon and beauty service on demand — crafted for women who want salon quality without leaving home.</p>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>About</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- SECTION 2: OUR STORY -->
+  <section class="section">
+    <div class="container">
+      <div class="about-editorial reveal-on-scroll">
+        <div class="about-collage">
+          <div class="deco-circle" aria-hidden="true"></div>
+          <div class="img-main">
+            <img class="img-cover" src="assets/images/about/team-work.png" alt="Beauty professionals creating a personal home beauty experience">
+          </div>
+          <div class="img-circle-sm">
+            <img class="img-cover" src="assets/images/about/about-sm.png" alt="Hair styling detail">
+          </div>
+          <div class="img-rect">
+            <img class="img-cover" src="assets/images/about/about-rect.png" alt="Makeup application">
+          </div>
+        </div>
+        <div>
+          <span class="eyebrow">Our Story</span>
+          <h2 class="section-title">Born From A Simple Idea: Beauty Should Come To You.</h2>
+          <p>BeautySpot began when we noticed how often women put off self-care — not for lack of desire, but for lack of time. Traffic, waiting rooms, and packed schedules made salon visits feel like another chore.</p>
+          <p>So we built a platform that brings trained beauticians, premium products, and hygienic tools straight to your door. From weekday glow facials to bridal mornings, every visit is designed to feel calm, personal, and professionally finished.</p>
+          <p>Today we serve homes across cities with verified experts who treat your living room like a private salon — quietly, carefully, and beautifully.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: WHY HOME BEAUTY -->
+  <section class="section bg-soft">
+    <div class="container">
+      <div class="text-center reveal-on-scroll">
+        <span class="eyebrow">Doorstep Beauty</span>
+        <h2 class="section-title centered">Why Home Beauty Feels Better.</h2>
+        <p class="section-lead">The same craft you expect from a salon — without the commute, the crowds, or the rush.</p>
+      </div>
+      <div class="why-grid cols-3 reveal-on-scroll">
+        <div class="why-item">
+          <div class="icon"><i class="bi bi-house-heart"></i></div>
+          <div>
+            <h4>Your Space, Your Pace</h4>
+            <p>Relax in familiar surroundings while your beautician works around your personal comfort. Enjoy your favorite music or tea in complete peace.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="icon"><i class="bi bi-clock-history"></i></div>
+          <div>
+            <h4>Time Saved</h4>
+            <p>No travel, no traffic, and zero salon waiting rooms — appointments start punctually when your expert arrives. Save 2+ hours on every beauty appointment.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="icon"><i class="bi bi-person-hearts"></i></div>
+          <div>
+            <h4>One-On-One Attention</h4>
+            <p>Undivided focus on your skin, hair, or makeup — never a rushed chair turnaround, long lines, or noisy salon background interruption for total relaxation.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="icon"><i class="bi bi-shield-check"></i></div>
+          <div>
+            <h4>Privacy &amp; Hygiene</h4>
+            <p>Private treatments with single-use disposable kits, sealed sterilized tools, and hospital-grade safety protocols for every single home visit.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="icon"><i class="bi bi-calendar2-check"></i></div>
+          <div>
+            <h4>Flexible Scheduling</h4>
+            <p>Morning, afternoon, or evening slots that fit workdays and family life. Reschedule seamlessly up to 2 hours before your scheduled appointment.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="icon"><i class="bi bi-stars"></i></div>
+          <div>
+            <h4>Occasion Ready</h4>
+            <p>Ideal for bridal prep, wedding parties, family celebrations, and everyday glow routines without ever having to set foot outside your front door.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: OUR MISSION -->
+  <section class="section">
+    <div class="container">
+      <div class="split-2 reveal-on-scroll">
+        <div>
+          <span class="eyebrow">Mission</span>
+          <h2 class="section-title">Make Premium Beauty Effortlessly Accessible.</h2>
+          <p class="section-lead">We exist to remove every barrier between women and the care they deserve — time, travel, and uncertainty.</p>
+          <ul class="icon-list">
+            <li><i class="bi bi-check-circle-fill"></i><span>Deliver salon-quality treatments at home with verified professionals.</span></li>
+            <li><i class="bi bi-check-circle-fill"></i><span>Uphold hygiene and product standards on every single visit.</span></li>
+            <li><i class="bi bi-check-circle-fill"></i><span>Create booking experiences that feel simple, transparent, and kind.</span></li>
+          </ul>
+        </div>
+        <div class="img-rounded" style="overflow:hidden;aspect-ratio:4/5;max-width:480px;margin-left:auto">
+          <img class="img-cover" src="assets/images/hero/hero-home2.png" alt="Warm home beauty experience representing our mission">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: OUR VISION -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="split-2 reveal-on-scroll">
+        <div class="img-rounded" style="overflow:hidden;aspect-ratio:4/5;max-width:480px">
+          <img class="img-cover" src="assets/images/services/service-prebridal.png" alt="Pre-bridal self-care ritual representing the BeautySpot vision">
+        </div>
+        <div>
+          <span class="eyebrow">Vision</span>
+          <h2 class="section-title">A World Where Self-Care Fits Real Life.</h2>
+          <p class="section-lead">We envision BeautySpot as the most trusted home beauty platform — where every woman can look and feel radiant without rearranging her entire day.</p>
+          <p>From expanding city coverage to deepening specialist training, we are building a network where craft, safety, and warmth travel together to every doorstep.</p>
+          <div class="why-feature" style="margin-top:28px;min-height:auto">
+            <div class="deco-circle" aria-hidden="true"></div>
+            <h3>Beauty without compromise.</h3>
+            <p>Convenience that never lowers the standard of care.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: PROFESSIONAL STANDARDS -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center reveal-on-scroll">
+        <span class="eyebrow">Standards</span>
+        <h2 class="section-title centered">Professional Standards You Can Trust.</h2>
+        <p class="section-lead">Every beautician on BeautySpot is verified, trained, and held to clear hygiene expectations.</p>
+      </div>
+      <div class="safety-grid reveal-on-scroll">
+        <article class="safety-item">
+          <div class="icon"><i class="bi bi-person-badge"></i></div>
+          <h4>Verification</h4>
+          <p>Identity checks and profile reviews before professionals join our trusted network.</p>
+        </article>
+        <article class="safety-item">
+          <div class="icon"><i class="bi bi-mortarboard"></i></div>
+          <h4>Training</h4>
+          <p>Service techniques, home etiquette, and specialized coaching for every visit.</p>
+        </article>
+        <article class="safety-item">
+          <div class="icon"><i class="bi bi-droplet-half"></i></div>
+          <h4>Hygiene</h4>
+          <p>Sanitized tools, fresh disposable kits, and clean sterile setup before treatment begins.</p>
+        </article>
+        <article class="safety-item">
+          <div class="icon"><i class="bi bi-clipboard2-pulse"></i></div>
+          <h4>Quality Review</h4>
+          <p>Ratings and active client feedback loops that keep overall service quality consistently high.</p>
+        </article>
+      </div>
+      <div class="text-center" style="margin-top:36px">
+        <a href="safety-standards.html" class="btn btn-outline">View Safety Standards</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: CTA -->
+  <section class="cta-band">
+    <div class="deco-circle c1" aria-hidden="true"></div>
+    <div class="deco-circle c2" aria-hidden="true"></div>
+    <div class="container reveal-on-scroll">
+      <h2>Ready To Experience BeautySpot?</h2>
+      <p>Book a verified beautician for hair, skin, nails, or bridal care — delivered to your door.</p>
+      <a href="booking.html" class="btn btn-white">Book Appointment</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Beauty<span>Spot</span></a>
+        <p>Home salon & beauty service on demand. Professional treatments delivered to your doorstep.</p>
+        <div class="social-links" style="margin-top:18px">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+        </div>
+      </div>
+      <div class="footer-col"><h5>Explore</h5>
+        <a href="about.html">About</a><a href="services.html">Services</a><a href="pricing.html">Pricing</a><a href="how-it-works.html">How It Works</a>
+      </div>
+      <div class="footer-col"><h5>Support</h5>
+        <a href="safety-standards.html">Safety Standards</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a href="blog.html">Blog</a>
+      </div>
+      <div class="footer-col"><h5>Account</h5>
+        <a href="login.html">Login</a><a href="register.html">Register</a><a href="customer-dashboard.html">Dashboard</a><a href="booking.html">Book Now</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 BeautySpot. All rights reserved.</span>
+      <span>Home Salon & Beauty Service On Demand</span>
+    </div>
+  </div>
+</footer>
+
+<button type="button" id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

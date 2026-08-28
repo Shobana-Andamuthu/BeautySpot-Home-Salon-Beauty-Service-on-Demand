@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Appointment — BeautySpot</title>
+  <meta name="description" content="Book a home salon appointment with BeautySpot. Choose service, date, time, and address in a few simple steps.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/responsive.css" rel="stylesheet">
+
+<script>
+  (function(){
+    var t=localStorage.getItem("bs_theme"), d=localStorage.getItem("bs_dir");
+    if(t==="dark") document.documentElement.setAttribute("data-theme","dark");
+    if(d==="rtl") document.documentElement.setAttribute("dir","rtl");
+  })();
+</script>
+</head>
+<body>
+
+<div id="preloader" class="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-logo">Beauty<span>Spot</span></div>
+    <div class="preloader-spinner"></div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Beauty<span>Spot</span></a>
+    <ul class="nav-desktop">
+      <li class="has-dropdown">
+        <a href="index.html" class="nav-home-trigger">Home <i class="bi bi-chevron-down"></i></a>
+        <div class="nav-dropdown">
+          <a href="index.html">Home 1</a>
+          <a href="home-2.html">Home 2</a>
+        </div>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="how-it-works.html">How It Works</a></li>
+
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="customer-dashboard.html">Dashboard</a></li>
+    </ul>
+    <div class="header-actions">
+      <div class="nav-controls">
+        <button type="button" class="nav-control-btn theme-toggle" aria-label="Toggle theme" title="Toggle Light/Dark Mode">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button type="button" class="nav-control-btn rtl-toggle" aria-label="Toggle layout direction" title="Toggle RTL/LTR">
+          <span class="rtl-label">RTL</span>
+        </button>
+      </div>
+      <a href="login.html" class="header-login">Login</a>
+      <a href="booking.html" class="btn btn-primary header-cta">Book Appointment</a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<nav class="mobile-nav" aria-label="Mobile">
+  <ul>
+    <li>
+      <button class="mobile-drop-toggle" aria-expanded="false">Home <i class="bi bi-chevron-down"></i></button>
+      <div class="mobile-sub">
+        <a href="index.html">Home 1</a>
+        <a href="home-2.html">Home 2</a>
+      </div>
+    </li>
+    <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="how-it-works.html">How It Works</a></li>
+
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="customer-dashboard.html">Dashboard</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="login.html">Login</a></li>
+  </ul>
+  <div class="mobile-nav-actions"><!-- mobile-nav-controls-added -->
+    <div class="nav-controls" style="justify-content:center;margin-bottom:14px">
+      <button type="button" class="nav-control-btn theme-toggle" aria-label="Toggle theme" title="Toggle Light/Dark Mode">
+        <i class="bi bi-moon-stars"></i>
+      </button>
+      <button type="button" class="nav-control-btn rtl-toggle" aria-label="Toggle layout direction" title="Toggle RTL/LTR">
+        <span class="rtl-label">RTL</span>
+      </button>
+    </div>
+    <a href="booking.html" class="btn btn-primary">Book Appointment</a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- SECTION 1: PAGE HERO -->
+  <section class="page-hero">
+    <div class="deco-circle" aria-hidden="true"></div>
+    <div class="container reveal-on-scroll">
+      <span class="eyebrow">Book Online</span>
+      <h1>Book Your Home Beauty Appointment</h1>
+      <p class="section-lead">Six simple steps from service selection to confirmation at your doorstep.</p>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Booking</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- SECTION 2: PROGRESS STEPS OVERVIEW -->
+  <section class="section-sm" style="padding-bottom:0">
+    <div class="container">
+      <div class="text-center reveal-on-scroll">
+        <span class="eyebrow">Your Progress</span>
+        <h2 class="section-title centered">Booking Steps</h2>
+        <p class="section-lead">Follow each step to reserve your preferred slot with a verified beautician.</p>
+      </div>
+      <div class="booking-steps reveal-on-scroll" style="margin-top:28px">
+        <div class="booking-step-indicator active" data-step="1"><span class="num">1</span> Service</div>
+        <div class="booking-step-indicator" data-step="2"><span class="num">2</span> Date</div>
+        <div class="booking-step-indicator" data-step="3"><span class="num">3</span> Time</div>
+        <div class="booking-step-indicator" data-step="4"><span class="num">4</span> Address</div>
+        <div class="booking-step-indicator" data-step="5"><span class="num">5</span> Review</div>
+        <div class="booking-step-indicator" data-step="6"><span class="num">6</span> Confirm</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: BOOKING FORM WIZARD -->
+  <section class="section" style="padding-top:24px">
+    <div class="container">
+      <div class="booking-wrap" style="padding-top:0">
+        <form id="bookingForm">
+
+          <!-- Step 1: Service -->
+          <div class="booking-panel active" data-step="1">
+            <h3 style="margin-bottom:8px">Choose A Service</h3>
+            <p style="margin-bottom:24px">Select the treatment you would like at home.</p>
+            <div class="service-options">
+              <div class="service-option" data-service="Haircut" data-price="₹499">
+                <img src="assets/images/services/service-haircut.png" alt="Haircut">
+                <div><strong>Haircut</strong><span>Trim &amp; finish at home</span></div>
+                <span class="price">₹499</span>
+              </div>
+              <div class="service-option" data-service="Glow Facial" data-price="₹899">
+                <img src="assets/images/services/service-glow-facial.png" alt="Glow Facial">
+                <div><strong>Glow Facial</strong><span>Deep cleanse &amp; radiance</span></div>
+                <span class="price">₹899</span>
+              </div>
+              <div class="service-option" data-service="Manicure" data-price="₹499">
+                <img src="assets/images/services/service-manicure.png" alt="Manicure">
+                <div><strong>Manicure</strong><span>Shape, care &amp; polish</span></div>
+                <span class="price">₹499</span>
+              </div>
+              <div class="service-option" data-service="Pedicure" data-price="₹599">
+                <img src="assets/images/services/service-pedicure.png" alt="Pedicure">
+                <div><strong>Pedicure</strong><span>Foot care &amp; polish</span></div>
+                <span class="price">₹599</span>
+              </div>
+              <div class="service-option" data-service="Bridal Makeup" data-price="₹7999">
+                <img src="assets/images/unique-variants/services/service-bridal-makeup-variant-2.jpg" alt="Bridal Makeup">
+                <div><strong>Bridal Makeup</strong><span>Full bridal look at home</span></div>
+                <span class="price">₹7999</span>
+              </div>
+              <div class="service-option" data-service="Hair Styling" data-price="₹699">
+                <img src="assets/images/services/service-hair-styling.png" alt="Hair Styling">
+                <div><strong>Hair Styling</strong><span>Blow dry &amp; occasion styles</span></div>
+                <span class="price">₹699</span>
+              </div>
+            </div>
+            <div class="booking-nav">
+              <span></span>
+              <button type="button" class="btn btn-primary" data-next>Continue</button>
+            </div>
+          </div>
+
+          <!-- Step 2: Date -->
+          <div class="booking-panel" data-step="2">
+            <h3 style="margin-bottom:8px">Select A Date</h3>
+            <p style="margin-bottom:24px">Pick a day that works for your schedule.</p>
+            <div class="form-group">
+              <label for="bookingDate">Preferred Date</label>
+              <input type="date" id="bookingDate" class="form-control" required>
+            </div>
+            <div class="booking-nav">
+              <button type="button" class="btn btn-outline" data-prev>Back</button>
+              <button type="button" class="btn btn-primary" data-next>Continue</button>
+            </div>
+          </div>
+
+          <!-- Step 3: Time -->
+          <div class="booking-panel" data-step="3">
+            <h3 style="margin-bottom:8px">Choose A Time Slot</h3>
+            <p style="margin-bottom:24px">Available slots for your selected date.</p>
+            <div class="time-slots">
+              <button type="button" class="time-slot" data-time="09:00 AM">09:00 AM</button>
+              <button type="button" class="time-slot" data-time="10:30 AM">10:30 AM</button>
+              <button type="button" class="time-slot" data-time="12:00 PM">12:00 PM</button>
+              <button type="button" class="time-slot" data-time="02:30 PM">02:30 PM</button>
+              <button type="button" class="time-slot" data-time="04:30 PM">04:30 PM</button>
+              <button type="button" class="time-slot" data-time="06:00 PM">06:00 PM</button>
+            </div>
+            <div class="booking-nav">
+              <button type="button" class="btn btn-outline" data-prev>Back</button>
+              <button type="button" class="btn btn-primary" data-next>Continue</button>
+            </div>
+          </div>
+
+          <!-- Step 4: Address -->
+          <div class="booking-panel" data-step="4">
+            <h3 style="margin-bottom:8px">Service Address</h3>
+            <p style="margin-bottom:24px">Where should your beautician arrive?</p>
+            <div class="form-group" style="margin-bottom:16px">
+              <label for="bookingAddress">Full Address</label>
+              <textarea id="bookingAddress" class="form-control" placeholder="Flat, building, street" required></textarea>
+            </div>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="bookingCity">City</label>
+                  <input type="text" id="bookingCity" class="form-control" placeholder="Mumbai" required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="bookingPin">PIN Code</label>
+                  <input type="text" id="bookingPin" class="form-control" placeholder="400001" required>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <label for="bookingNotes">Notes (optional)</label>
+                  <textarea id="bookingNotes" class="form-control" placeholder="Gate code, landmark, preferences…"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="booking-nav">
+              <button type="button" class="btn btn-outline" data-prev>Back</button>
+              <button type="button" class="btn btn-primary" data-next>Continue</button>
+            </div>
+          </div>
+
+          <!-- Step 5: Review -->
+          <div class="booking-panel" data-step="5">
+            <h3 style="margin-bottom:8px">Review Your Booking</h3>
+            <p style="margin-bottom:24px">Confirm the details before placing your appointment.</p>
+            <ul class="review-list" style="list-style:none;padding:0;margin:0">
+              <li><span>Service</span><strong id="revService">—</strong></li>
+              <li><span>Date</span><strong id="revDate">—</strong></li>
+              <li><span>Time</span><strong id="revTime">—</strong></li>
+              <li><span>Address</span><strong id="revAddress">—</strong></li>
+              <li><span>Price</span><strong id="revPrice">—</strong></li>
+            </ul>
+            <div class="booking-nav">
+              <button type="button" class="btn btn-outline" data-prev>Back</button>
+              <button type="button" class="btn btn-primary" data-next>Continue</button>
+            </div>
+          </div>
+
+          <!-- Step 6: Confirm -->
+          <div class="booking-panel" data-step="6">
+            <h3 style="margin-bottom:8px">Confirm Appointment</h3>
+            <p style="margin-bottom:24px">You are one tap away from locking your home beauty visit. Payment can be completed after the service if preferred.</p>
+            <div class="tip-box">
+              <h4>What happens next?</h4>
+              <p style="margin:0">We assign a verified beautician, send confirmation details, and let you track arrival from your dashboard.</p>
+            </div>
+            <div class="booking-nav">
+              <button type="button" class="btn btn-outline" data-prev>Back</button>
+              <button type="button" class="btn btn-primary" id="confirmBooking">Confirm Booking</button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: WHY BOOK WITH US -->
+  <section class="section bg-soft">
+    <div class="container">
+      <div class="text-center reveal-on-scroll">
+        <span class="eyebrow">Trust</span>
+        <h2 class="section-title centered">Why Book With Us</h2>
+        <p class="section-lead">Home beauty designed around hygiene, skill, and your schedule.</p>
+      </div>
+      <div class="why-grid reveal-on-scroll" style="margin-top:40px">
+        <div class="why-item">
+          <div class="icon"><i class="bi bi-shield-check"></i></div>
+          <div>
+            <h4>Verified Beauticians</h4>
+            <p>Background-checked professionals trained for home visits.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="icon"><i class="bi bi-clock-history"></i></div>
+          <div>
+            <h4>Flexible Slots</h4>
+            <p>Morning to evening appointments, including same-day options.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="icon"><i class="bi bi-geo-alt"></i></div>
+          <div>
+            <h4>Live Tracking</h4>
+            <p>Know when your beautician is on the way to your door.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="icon"><i class="bi bi-droplet-half"></i></div>
+          <div>
+            <h4>Hygienic Kits</h4>
+            <p>Sanitized tools and fresh disposables for every booking.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: POPULAR ADD-ONS -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center reveal-on-scroll">
+        <span class="eyebrow">Enhance</span>
+        <h2 class="section-title centered">Popular Add-Ons</h2>
+        <p class="section-lead">Pair your main service with extras you can request in notes or after confirmation.</p>
+      </div>
+      <div class="include-grid reveal-on-scroll" style="margin-top:36px">
+        <div class="include-item">
+          <i class="bi bi-sparkles"></i>
+          <div>
+            <h4>Hair Spa Mini</h4>
+            <p>Nourishing mask add-on with your cut or styling — ₹349.</p>
+          </div>
+        </div>
+        <div class="include-item">
+          <i class="bi bi-eyedropper"></i>
+          <div>
+            <h4>Under-Eye Mask</h4>
+            <p>Cooling treatment with Glow Facial for brighter eyes — ₹199.</p>
+          </div>
+        </div>
+        <div class="include-item">
+          <i class="bi bi-hand-index-thumb"></i>
+          <div>
+            <h4>Gel Polish Upgrade</h4>
+            <p>Longer-lasting finish for manicure or pedicure — ₹299.</p>
+          </div>
+        </div>
+        <div class="include-item">
+          <i class="bi bi-heart"></i>
+          <div>
+            <h4>Bridal Trial Touch-Up</h4>
+            <p>Light touch-up kit guidance after bridal makeup — ₹999.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: SAFETY NOTE -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row align-items-center g-4 reveal-on-scroll">
+        <div class="col-lg-6">
+          <span class="eyebrow">Care Standards</span>
+          <h2 class="section-title">Your Safety Comes First</h2>
+          <p class="section-lead">Every BeautySpot visit follows our hygiene checklist — from kit sterilization to professional conduct at your home.</p>
+          <ul style="padding-left:18px;margin-top:16px">
+            <li>Sanitized tools and single-use disposables</li>
+            <li>Verified identity and service training</li>
+            <li>Transparent pricing with no hidden fees</li>
+          </ul>
+          <a href="safety-standards.html" class="btn btn-outline" style="margin-top:18px">View Safety Standards</a>
+        </div>
+        <div class="col-lg-6">
+          <img class="img-cover" src="assets/images/safety/safety-kit.png" alt="Beautician preparing hygienic makeup tools" style="border-radius:var(--radius-lg);min-height:280px;width:100%;object-fit:cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: HELP CTA -->
+  <section class="cta-band">
+    <div class="deco-circle c1" aria-hidden="true"></div>
+    <div class="deco-circle c2" aria-hidden="true"></div>
+    <div class="container reveal-on-scroll">
+      <h2>Need Help Choosing A Service?</h2>
+      <p>Our care team can guide you on treatments, timing, and bridal packages.</p>
+      <div class="btn-group-gap" style="justify-content:center">
+        <a href="contact.html" class="btn btn-white">Contact Support</a>
+        <a href="faq.html" class="btn btn-outline-white">Browse FAQ</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Beauty<span>Spot</span></a>
+        <p>Home salon & beauty service on demand. Professional treatments delivered to your doorstep.</p>
+        <div class="social-links" style="margin-top:18px">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+        </div>
+      </div>
+      <div class="footer-col"><h5>Explore</h5>
+        <a href="about.html">About</a><a href="services.html">Services</a><a href="pricing.html">Pricing</a><a href="how-it-works.html">How It Works</a>
+      </div>
+      <div class="footer-col"><h5>Support</h5>
+        <a href="safety-standards.html">Safety Standards</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a href="blog.html">Blog</a>
+      </div>
+      <div class="footer-col"><h5>Account</h5>
+        <a href="login.html">Login</a><a href="register.html">Register</a><a href="customer-dashboard.html">Dashboard</a><a href="booking.html">Book Now</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 BeautySpot. All rights reserved.</span>
+      <span>Home Salon & Beauty Service On Demand</span>
+    </div>
+  </div>
+</footer>
+
+<button type="button" id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

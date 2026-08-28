@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BeautySpot — Beauty That Comes To You</title>
+  <meta name="description" content="Professional home salon & beauty service on demand. Book facial, hair, nails, and bridal treatments delivered to your doorstep.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/responsive.css" rel="stylesheet">
+
+<script>
+  (function(){
+    var t=localStorage.getItem("bs_theme"), d=localStorage.getItem("bs_dir");
+    if(t==="dark") document.documentElement.setAttribute("data-theme","dark");
+    if(d==="rtl") document.documentElement.setAttribute("dir","rtl");
+  })();
+</script>
+</head>
+<body>
+
+<div id="preloader" class="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-logo">Beauty<span>Spot</span></div>
+    <div class="preloader-spinner"></div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Beauty<span>Spot</span></a>
+    <ul class="nav-desktop">
+      <li class="has-dropdown">
+        <a href="index.html" class="nav-home-trigger">Home <i class="bi bi-chevron-down"></i></a>
+        <div class="nav-dropdown">
+          <a href="index.html">Home 1</a>
+          <a href="home-2.html">Home 2</a>
+        </div>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="how-it-works.html">How It Works</a></li>
+
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="customer-dashboard.html">Dashboard</a></li>
+    </ul>
+    <div class="header-actions">
+      <div class="nav-controls">
+        <button type="button" class="nav-control-btn theme-toggle" aria-label="Toggle theme" title="Toggle Light/Dark Mode">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button type="button" class="nav-control-btn rtl-toggle" aria-label="Toggle layout direction" title="Toggle RTL/LTR">
+          <span class="rtl-label">RTL</span>
+        </button>
+      </div>
+      <a href="login.html" class="header-login">Login</a>
+      <a href="booking.html" class="btn btn-primary header-cta">Book Appointment</a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<nav class="mobile-nav" aria-label="Mobile">
+  <ul>
+    <li>
+      <button class="mobile-drop-toggle" aria-expanded="false">Home <i class="bi bi-chevron-down"></i></button>
+      <div class="mobile-sub">
+        <a href="index.html">Home 1</a>
+        <a href="home-2.html">Home 2</a>
+      </div>
+    </li>
+    <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="how-it-works.html">How It Works</a></li>
+
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="customer-dashboard.html">Dashboard</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="login.html">Login</a></li>
+  </ul>
+  <div class="mobile-nav-actions"><!-- mobile-nav-controls-added -->
+    <div class="nav-controls" style="justify-content:center;margin-bottom:14px">
+      <button type="button" class="nav-control-btn theme-toggle" aria-label="Toggle theme" title="Toggle Light/Dark Mode">
+        <i class="bi bi-moon-stars"></i>
+      </button>
+      <button type="button" class="nav-control-btn rtl-toggle" aria-label="Toggle layout direction" title="Toggle RTL/LTR">
+        <span class="rtl-label">RTL</span>
+      </button>
+    </div>
+    <a href="booking.html" class="btn btn-primary">Book Appointment</a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- SECTION 1: HERO -->
+  <section class="hero-home1">
+    <div class="deco-circle c1" aria-hidden="true"></div>
+    <div class="deco-circle c2" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content reveal-on-scroll">
+          <span class="eyebrow">Home Salon On Demand</span>
+          <h1>Beauty That Comes To You.</h1>
+          <p>Professional beauty treatments from trained experts, delivered to your doorstep.</p>
+          <div class="btn-group-gap">
+            <a href="booking.html" class="btn btn-primary">Book A Home Service</a>
+            <a href="services.html" class="btn btn-outline">Explore Services</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal-on-scroll">
+          <div class="hero-visual-frame">
+            <img src="assets/images/services/service-party-makeup.png" alt="Elegant at-home party makeup service">
+          </div>
+          <div class="hours-card">
+            <strong>Open Daily</strong>
+            <p>9:00 AM – 9:00 PM<br>Same-day slots available</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: INTRODUCTION -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="about-editorial reveal-on-scroll">
+        <div class="about-collage">
+          <div class="deco-circle" aria-hidden="true"></div>
+          <div class="img-main">
+            <img class="img-cover" src="assets/images/unique-variants/services/service-anti-aging-variant-3.jpg" alt="Woman receiving facial care at home">
+          </div>
+          <div class="img-circle-sm">
+            <img class="img-cover" src="assets/images/services/service-body-polishing.png" alt="Relaxing body care treatment">
+          </div>
+          <div class="img-rect">
+            <img class="img-cover" src="assets/images/unique-variants/services/service-skin-cleanup-variant-4.jpg" alt="Anti-aging skin ritual">
+          </div>
+        </div>
+        <div>
+          <span class="eyebrow">Our Philosophy</span>
+          <h2 class="section-title">Beauty Is About Feeling Confident In Your Own Skin.</h2>
+          <p class="section-lead">BeautySpot brings salon-quality care into your living room. Skip the commute, the waiting room, and the rush — and enjoy a calm, personalized beauty ritual at home.</p>
+          <p>Every visit is handled by a verified beautician using premium products and hygienic tools. From everyday glow facials to bridal makeup, we focus on convenience without compromising craft.</p>
+          <a href="about.html" class="btn btn-primary" style="margin-top:12px">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: SERVICES -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center reveal-on-scroll">
+        <span class="eyebrow">Our Menu</span>
+        <h2 class="section-title centered">Everything You Need To Feel Beautiful.</h2>
+        <p class="section-lead">Curated home treatments for hair, skin, nails, and bridal occasions — booked around your day.</p>
+      </div>
+      <div class="services-editorial reveal-on-scroll" style="margin-top:40px">
+        <a href="service-details.html" class="service-tile with-image">
+          <div class="tile-img">
+            <img src="assets/images/unique-variants/services/service-hair-styling-variant-5.jpg" alt="Hair styling service">
+          </div>
+          <div class="tile-body">
+            <h3>Hair</h3>
+            <p>Blow dry, occasion styling, precision trims, and festive hair looks finished in the comfort of your home.</p>
+            <span class="service-link">View Details <i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="service-details.html" class="service-tile with-image">
+          <div class="tile-img">
+            <img src="assets/images/unique-variants/services/service-glow-facial-variant-3.jpg" alt="Skin facial treatment">
+          </div>
+          <div class="tile-body">
+            <h3>Skin</h3>
+            <p>Signature glow facials, gentle cleanups, and hydrating skin rituals tailored to your unique skin type.</p>
+            <span class="service-link">View Details <i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="service-details.html" class="service-tile with-image">
+          <div class="tile-img">
+            <img src="assets/images/unique-variants/services/service-manicure-variant-4.jpg" alt="Nail care manicure service">
+          </div>
+          <div class="tile-body">
+            <h3>Nails</h3>
+            <p>Deluxe manicures, relaxing foot spa pedicures, and nail art polish finishes that look flawless and clean.</p>
+            <span class="service-link">View Details <i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="service-details.html" class="service-tile with-image">
+          <div class="tile-img">
+            <img src="assets/images/unique-variants/services/service-bridal-makeup-variant-5.jpg" alt="Bridal makeup service">
+          </div>
+          <div class="tile-body">
+            <h3>Bridal</h3>
+            <p>Trial-ready makeup, soft occasion glam, and complete wedding packages designed for your special day.</p>
+            <span class="service-link">View Details <i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- SECTION 5: HOW IT WORKS -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center reveal-on-scroll">
+        <span class="eyebrow">Simple Booking</span>
+        <h2 class="section-title centered">Your Beauty Appointment, Made Simple.</h2>
+        <p class="section-lead">Six clear steps from choosing a service to enjoying a finished look at home.</p>
+      </div>
+      <div class="timeline reveal-on-scroll">
+        <div class="timeline-step">
+          <h4>Choose Service</h4>
+          <p>Pick hair, skin, nails, or bridal from our curated home beauty menu.</p>
+        </div>
+        <div class="timeline-step">
+          <h4>Select Date &amp; Time</h4>
+          <p>Choose a slot that fits your day — including same-day availability.</p>
+        </div>
+        <div class="timeline-step">
+          <h4>Enter Your Address</h4>
+          <p>Share your home details so your beautician arrives prepared.</p>
+        </div>
+        <div class="timeline-step">
+          <h4>Beautician Assigned</h4>
+          <p>We match you with a verified specialist for your treatment.</p>
+        </div>
+        <div class="timeline-step">
+          <h4>Track Arrival</h4>
+          <p>Stay updated as your professional heads to your doorstep.</p>
+        </div>
+        <div class="timeline-step">
+          <h4>Enjoy Your Service</h4>
+          <p>Relax while we deliver a polished, salon-quality experience.</p>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top:40px">
+        <a href="how-it-works.html" class="btn btn-outline">See Full Process</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: PROFESSIONALS -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="text-center reveal-on-scroll">
+        <span class="eyebrow">Our Experts</span>
+        <h2 class="section-title centered">Meet Our Beauty Experts.</h2>
+        <p class="section-lead">Skilled beauticians who bring calm confidence and precise craft to every home visit.</p>
+      </div>
+      <div class="pros-grid reveal-on-scroll">
+        <article class="pro-card">
+          <div class="avatar">
+            <img src="assets/images/unique-variants/professionals/meera-sharma-variant-5.jpg" alt="Meera Sharma">
+          </div>
+          <h4>Meera Sharma</h4>
+          <p class="specialty">Facial &amp; Skin</p>
+          <p class="meta">8 yrs · <span class="rating">4.9 ★</span></p>
+        </article>
+        <article class="pro-card">
+          <div class="avatar">
+            <img src="assets/images/professionals/ananya-reddy.png" alt="Ananya Reddy">
+          </div>
+          <h4>Ananya Reddy</h4>
+          <p class="specialty">Hair Styling</p>
+          <p class="meta">6 yrs · <span class="rating">4.8 ★</span></p>
+        </article>
+        <article class="pro-card">
+          <div class="avatar">
+            <img src="assets/images/professionals/priya-kapoor.png" alt="Priya Kapoor">
+          </div>
+          <h4>Priya Kapoor</h4>
+          <p class="specialty">Bridal Makeup</p>
+          <p class="meta">10 yrs · <span class="rating">5.0 ★</span></p>
+        </article>
+        <article class="pro-card">
+          <div class="avatar">
+            <img src="assets/images/professionals/sana-iqbal.png" alt="Sana Iqbal">
+          </div>
+          <h4>Sana Iqbal</h4>
+          <p class="specialty">Nails</p>
+          <p class="meta">5 yrs · <span class="rating">4.9 ★</span></p>
+        </article>
+        <article class="pro-card">
+          <div class="avatar">
+            <img src="assets/images/professionals/rhea-malhotra.png" alt="Rhea Malhotra">
+          </div>
+          <h4>Rhea Malhotra</h4>
+          <p class="specialty">Makeup Artistry</p>
+          <p class="meta">7 yrs · <span class="rating">4.9 ★</span></p>
+        </article>
+        <article class="pro-card">
+          <div class="avatar">
+            <img src="assets/images/unique-variants/professionals/kavita-sen-variant-2.jpg" alt="Kavita Sen">
+          </div>
+          <h4>Kavita Sen</h4>
+          <p class="specialty">Hair Spa &amp; Care</p>
+          <p class="meta">8 yrs · <span class="rating">4.9 ★</span></p>
+        </article>
+        <article class="pro-card">
+          <div class="avatar">
+            <img src="assets/images/professionals/nisha-verma.png" alt="Nisha Verma">
+          </div>
+          <h4>Nisha Verma</h4>
+          <p class="specialty">Skin &amp; Cleanup</p>
+          <p class="meta">7 yrs · <span class="rating">4.8 ★</span></p>
+        </article>
+        <article class="pro-card">
+          <div class="avatar">
+            <img src="assets/images/professionals/aisha-khan.png" alt="Aisha Khan">
+          </div>
+          <h4>Aisha Khan</h4>
+          <p class="specialty">Bridal &amp; Glam</p>
+          <p class="meta">9 yrs · <span class="rating">5.0 ★</span></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: TESTIMONIALS -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center reveal-on-scroll">
+        <span class="eyebrow">Reviews</span>
+        <h2 class="section-title centered">What Our Customers Say.</h2>
+        <p class="section-lead">Real stories from women who rediscovered the joy of beauty at home.</p>
+      </div>
+      <div class="testimonial-layout reveal-on-scroll" style="margin-top:48px">
+        <div class="testimonial-photo">
+          <img class="img-cover" src="assets/images/unique-variants/testimonials/radhika-gupta-variant-2.jpg" alt="Happy BeautySpot customer">
+        </div>
+        <div class="testimonial-quote">
+          <div class="stars">★★★★★</div>
+          <blockquote>“My bridal trial at home felt so calm. Priya understood exactly the soft glam I wanted, and I never had to sit in traffic or a crowded salon.”</blockquote>
+          <div class="testimonial-author">
+            <strong>Ishita Mehra</strong>
+            <span>Bridal Makeup Client · Mumbai</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-cards reveal-on-scroll">
+        <article class="t-card">
+          <div class="t-card-head">
+            <img src="assets/images/unique-variants/testimonials/nisha-verma-variant-2.jpg" alt="Nisha Verma">
+            <div>
+              <strong>Nisha Verma</strong>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <p>The glow facial left my skin soft for days. Meera was gentle, on time, and brought everything she needed.</p>
+        </article>
+        <article class="t-card">
+          <div class="t-card-head">
+            <img src="assets/images/unique-variants/testimonials/kavya-iyer-variant-2.jpg" alt="Kavya Iyer">
+            <div>
+              <strong>Kavya Iyer</strong>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <p>Ananya styled my hair before a dinner party. Salon finish, zero travel — I am never going back to waiting rooms.</p>
+        </article>
+        <article class="t-card">
+          <div class="t-card-head">
+            <img src="assets/images/unique-variants/testimonials/aisha-khan-variant-2.jpg" alt="Aisha Khan">
+            <div>
+              <strong>Aisha Khan</strong>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <p>My manicure and pedicure at home felt luxurious. Tools looked spotless and the polish lasted through the week.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 8: FINAL CTA -->
+  <section class="cta-band">
+    <div class="deco-circle c1" aria-hidden="true"></div>
+    <div class="deco-circle c2" aria-hidden="true"></div>
+    <div class="container reveal-on-scroll">
+      <h2>Bring Out The Beauty In You.</h2>
+      <p>Choose your treatment, pick your preferred time, and let our professionals come to you.</p>
+      <a href="booking.html" class="btn btn-white">Book An Appointment</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Beauty<span>Spot</span></a>
+        <p>Home salon & beauty service on demand. Professional treatments delivered to your doorstep.</p>
+        <div class="social-links" style="margin-top:18px">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+        </div>
+      </div>
+      <div class="footer-col"><h5>Explore</h5>
+        <a href="about.html">About</a><a href="services.html">Services</a><a href="pricing.html">Pricing</a><a href="how-it-works.html">How It Works</a>
+      </div>
+      <div class="footer-col"><h5>Support</h5>
+        <a href="safety-standards.html">Safety Standards</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a href="blog.html">Blog</a>
+      </div>
+      <div class="footer-col"><h5>Account</h5>
+        <a href="login.html">Login</a><a href="register.html">Register</a><a href="customer-dashboard.html">Dashboard</a><a href="booking.html">Book Now</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 BeautySpot. All rights reserved.</span>
+      <span>Home Salon & Beauty Service On Demand</span>
+    </div>
+  </div>
+</footer>
+
+<button type="button" id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

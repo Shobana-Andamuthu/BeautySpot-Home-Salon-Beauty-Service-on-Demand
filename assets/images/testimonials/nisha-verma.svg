@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+    <defs>
+      <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FCE8F1"/>
+        <stop offset="100%" stop-color="#FFF5F8"/>
+      </linearGradient>
+      <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#E83E8C"/>
+        <stop offset="100%" stop-color="#C92B70"/>
+      </linearGradient>
+      <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+        <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#242024" flood-opacity="0.08"/>
+      </filter>
+    </defs>
+    <rect width="160" height="160" fill="url(#bgGrad)"/>
+    
+      <circle cx="80" cy="80" r="67.2" fill="url(#grad)" />
+      <circle cx="80" cy="67.2" r="32" fill="#FFF" opacity="0.9"/>
+      <path d="M 32 136 Q 80 88 128 136 Z" fill="#FFF" opacity="0.9"/>
+    
+    
+    
+    <text x="80" y="140.8" 
+          font-family="'Playfair Display', Georgia, serif" font-size="16" font-weight="700" 
+          fill="#242024" text-anchor="middle">Nisha V.</text>
+    
+    
+    <text x="80" y="152" 
+          font-family="'Poppins', sans-serif" font-size="12" font-weight="500" 
+          fill="#E83E8C" letter-spacing="1" text-anchor="middle">VERIFIED CLIENT</text>
+    
+    <rect x="0" y="0" width="160" height="160" fill="none" stroke="#E83E8C" stroke-width="1" opacity="0.15"/>
+  </svg>

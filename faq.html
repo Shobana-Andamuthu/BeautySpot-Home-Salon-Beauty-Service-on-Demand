@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ — BeautySpot</title>
+  <meta name="description" content="Frequently asked questions about BeautySpot booking, beauticians, safety, payments, cancellations, and rescheduling.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/responsive.css" rel="stylesheet">
+
+<script>
+  (function(){
+    var t=localStorage.getItem("bs_theme"), d=localStorage.getItem("bs_dir");
+    if(t==="dark") document.documentElement.setAttribute("data-theme","dark");
+    if(d==="rtl") document.documentElement.setAttribute("dir","rtl");
+  })();
+</script>
+</head>
+<body>
+
+<div id="preloader" class="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-logo">Beauty<span>Spot</span></div>
+    <div class="preloader-spinner"></div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Beauty<span>Spot</span></a>
+    <ul class="nav-desktop">
+      <li class="has-dropdown">
+        <a href="index.html" class="nav-home-trigger">Home <i class="bi bi-chevron-down"></i></a>
+        <div class="nav-dropdown">
+          <a href="index.html">Home 1</a>
+          <a href="home-2.html">Home 2</a>
+        </div>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="how-it-works.html">How It Works</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="customer-dashboard.html">Dashboard</a></li>
+    </ul>
+    <div class="header-actions">
+      <div class="nav-controls">
+        <button type="button" class="nav-control-btn theme-toggle" aria-label="Toggle theme" title="Toggle Light/Dark Mode">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button type="button" class="nav-control-btn rtl-toggle" aria-label="Toggle layout direction" title="Toggle RTL/LTR">
+          <span class="rtl-label">RTL</span>
+        </button>
+      </div>
+      <a href="login.html" class="header-login">Login</a>
+      <a href="booking.html" class="btn btn-primary header-cta">Book Appointment</a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<nav class="mobile-nav" aria-label="Mobile">
+  <ul>
+    <li>
+      <button class="mobile-drop-toggle" aria-expanded="false">Home <i class="bi bi-chevron-down"></i></button>
+      <div class="mobile-sub">
+        <a href="index.html">Home 1</a>
+        <a href="home-2.html">Home 2</a>
+      </div>
+    </li>
+    <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="how-it-works.html">How It Works</a></li>
+
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="customer-dashboard.html">Dashboard</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="login.html">Login</a></li>
+  </ul>
+  <div class="mobile-nav-actions"><!-- mobile-nav-controls-added -->
+    <div class="nav-controls" style="justify-content:center;margin-bottom:14px">
+      <button type="button" class="nav-control-btn theme-toggle" aria-label="Toggle theme" title="Toggle Light/Dark Mode">
+        <i class="bi bi-moon-stars"></i>
+      </button>
+      <button type="button" class="nav-control-btn rtl-toggle" aria-label="Toggle layout direction" title="Toggle RTL/LTR">
+        <span class="rtl-label">RTL</span>
+      </button>
+    </div>
+    <a href="booking.html" class="btn btn-primary">Book Appointment</a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- SECTION 1: PAGE HERO -->
+  <section class="page-hero">
+    <div class="deco-circle" aria-hidden="true"></div>
+    <div class="container reveal-on-scroll">
+      <span class="eyebrow">Help Center</span>
+      <h1>Frequently Asked Questions</h1>
+      <p class="section-lead" style="margin:0">Answers about booking, beauticians, safety, payments, and changing your appointment.</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>FAQ</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: BOOKING FAQ -->
+  <section class="section">
+    <div class="container">
+      <div class="content-block reveal-on-scroll" style="margin:0 auto">
+        <span class="eyebrow">Booking</span>
+        <h2 class="section-title">Booking FAQ</h2>
+        <p class="section-lead">How to schedule a BeautySpot home beauty appointment.</p>
+        <div class="accordion" id="accordionBooking" style="margin-top:28px">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="bookingHeadingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#bookingCollapseOne" aria-expanded="true" aria-controls="bookingCollapseOne">
+                How do I book a home beauty service?
+              </button>
+            </h2>
+            <div id="bookingCollapseOne" class="accordion-collapse collapse show" aria-labelledby="bookingHeadingOne" data-bs-parent="#accordionBooking">
+              <div class="accordion-body">Choose a service, pick a date and time, enter your address, and confirm. You will receive booking confirmation and beautician details once matched.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="bookingHeadingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bookingCollapseTwo" aria-expanded="false" aria-controls="bookingCollapseTwo">
+                Can I book same-day appointments?
+              </button>
+            </h2>
+            <div id="bookingCollapseTwo" class="accordion-collapse collapse" aria-labelledby="bookingHeadingTwo" data-bs-parent="#accordionBooking">
+              <div class="accordion-body">Yes, when slots are available in your area. Same-day options appear during checkout based on beautician capacity and travel time.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="bookingHeadingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bookingCollapseThree" aria-expanded="false" aria-controls="bookingCollapseThree">
+                Which services can I book at home?
+              </button>
+            </h2>
+            <div id="bookingCollapseThree" class="accordion-collapse collapse" aria-labelledby="bookingHeadingThree" data-bs-parent="#accordionBooking">
+              <div class="accordion-body">Hair styling, glow facials and skin treatments, manicure &amp; pedicure, and bridal or party makeup — all delivered to your doorstep.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="bookingHeadingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bookingCollapseFour" aria-expanded="false" aria-controls="bookingCollapseFour">
+                Do I need to prepare anything before the visit?
+              </button>
+            </h2>
+            <div id="bookingCollapseFour" class="accordion-collapse collapse" aria-labelledby="bookingHeadingFour" data-bs-parent="#accordionBooking">
+              <div class="accordion-body">A clean, well-lit seating area with access to a power outlet and washbasin nearby is ideal. Your beautician brings tools and products.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: BEAUTICIAN FAQ -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="content-block reveal-on-scroll" style="margin:0 auto">
+        <span class="eyebrow">Experts</span>
+        <h2 class="section-title">Beautician FAQ</h2>
+        <p class="section-lead">How matching, profiles, and preferences work.</p>
+        <div class="accordion" id="accordionBeautician" style="margin-top:28px">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="beauticianHeadingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#beauticianCollapseOne" aria-expanded="true" aria-controls="beauticianCollapseOne">
+                How is my beautician assigned?
+              </button>
+            </h2>
+            <div id="beauticianCollapseOne" class="accordion-collapse collapse show" aria-labelledby="beauticianHeadingOne" data-bs-parent="#accordionBeautician">
+              <div class="accordion-body">We match based on specialty, ratings, availability, and proximity so the right expert arrives for your chosen treatment.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="beauticianHeadingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#beauticianCollapseTwo" aria-expanded="false" aria-controls="beauticianCollapseTwo">
+                Can I request the same beautician again?
+              </button>
+            </h2>
+            <div id="beauticianCollapseTwo" class="accordion-collapse collapse" aria-labelledby="beauticianHeadingTwo" data-bs-parent="#accordionBeautician">
+              <div class="accordion-body">Yes. Save a favorite after your visit and we will prioritize them when they are free for your next slot.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="beauticianHeadingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#beauticianCollapseThree" aria-expanded="false" aria-controls="beauticianCollapseThree">
+                Are beauticians verified?
+              </button>
+            </h2>
+            <div id="beauticianCollapseThree" class="accordion-collapse collapse" aria-labelledby="beauticianHeadingThree" data-bs-parent="#accordionBeautician">
+              <div class="accordion-body">All professionals complete identity checks, skill screening, and home-service training before they can accept appointments.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: SAFETY FAQ -->
+  <section class="section">
+    <div class="container">
+      <div class="content-block reveal-on-scroll" style="margin:0 auto">
+        <span class="eyebrow">Hygiene</span>
+        <h2 class="section-title">Safety FAQ</h2>
+        <p class="section-lead">Tools, products, and what to expect for a clean visit.</p>
+        <div class="accordion" id="accordionSafety" style="margin-top:28px">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="safetyHeadingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#safetyCollapseOne" aria-expanded="true" aria-controls="safetyCollapseOne">
+                Are tools sanitized for every appointment?
+              </button>
+            </h2>
+            <div id="safetyCollapseOne" class="accordion-collapse collapse show" aria-labelledby="safetyHeadingOne" data-bs-parent="#accordionSafety">
+              <div class="accordion-body">Yes. Beauticians bring sterilized kits and fresh disposables for each client. Shared tools are cleaned before every visit.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="safetyHeadingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#safetyCollapseTwo" aria-expanded="false" aria-controls="safetyCollapseTwo">
+                What if I have allergies or sensitive skin?
+              </button>
+            </h2>
+            <div id="safetyCollapseTwo" class="accordion-collapse collapse" aria-labelledby="safetyHeadingTwo" data-bs-parent="#accordionSafety">
+              <div class="accordion-body">Add notes during booking. Your beautician will avoid flagged ingredients and can discuss product alternatives on arrival.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="safetyHeadingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#safetyCollapseThree" aria-expanded="false" aria-controls="safetyCollapseThree">
+                Where can I read your full safety standards?
+              </button>
+            </h2>
+            <div id="safetyCollapseThree" class="accordion-collapse collapse" aria-labelledby="safetyHeadingThree" data-bs-parent="#accordionSafety">
+              <div class="accordion-body">Visit our <a href="safety-standards.html">Safety Standards</a> page for details on verification, hygiene protocols, and premium products.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: PAYMENT FAQ -->
+  <section class="section bg-soft">
+    <div class="container">
+      <div class="content-block reveal-on-scroll" style="margin:0 auto">
+        <span class="eyebrow">Billing</span>
+        <h2 class="section-title">Payment FAQ</h2>
+        <p class="section-lead">Pricing clarity, payment methods, and invoices.</p>
+        <div class="accordion" id="accordionPayment" style="margin-top:28px">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="paymentHeadingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#paymentCollapseOne" aria-expanded="true" aria-controls="paymentCollapseOne">
+                When do I pay for my appointment?
+              </button>
+            </h2>
+            <div id="paymentCollapseOne" class="accordion-collapse collapse show" aria-labelledby="paymentHeadingOne" data-bs-parent="#accordionPayment">
+              <div class="accordion-body">Payment is collected securely at checkout when you confirm your booking. You will not be asked for cash at the door.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="paymentHeadingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#paymentCollapseTwo" aria-expanded="false" aria-controls="paymentCollapseTwo">
+                Are prices inclusive of home visit charges?
+              </button>
+            </h2>
+            <div id="paymentCollapseTwo" class="accordion-collapse collapse" aria-labelledby="paymentHeadingTwo" data-bs-parent="#accordionPayment">
+              <div class="accordion-body">Displayed prices include standard doorstep service within serviceable areas. Any add-ons are shown before you confirm.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="paymentHeadingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#paymentCollapseThree" aria-expanded="false" aria-controls="paymentCollapseThree">
+                Can I get an invoice or receipt?
+              </button>
+            </h2>
+            <div id="paymentCollapseThree" class="accordion-collapse collapse" aria-labelledby="paymentHeadingThree" data-bs-parent="#accordionPayment">
+              <div class="accordion-body">Yes. A digital receipt is emailed after payment, and invoices are available from your customer dashboard.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: CANCELLATION / RESCHEDULING FAQ -->
+  <section class="section">
+    <div class="container">
+      <div class="content-block reveal-on-scroll" style="margin:0 auto">
+        <span class="eyebrow">Changes</span>
+        <h2 class="section-title">Cancellation &amp; Rescheduling FAQ</h2>
+        <p class="section-lead">How to change plans without stress.</p>
+        <div class="accordion" id="accordionCancel" style="margin-top:28px">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="cancelHeadingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#cancelCollapseOne" aria-expanded="true" aria-controls="cancelCollapseOne">
+                How do I reschedule my appointment?
+              </button>
+            </h2>
+            <div id="cancelCollapseOne" class="accordion-collapse collapse show" aria-labelledby="cancelHeadingOne" data-bs-parent="#accordionCancel">
+              <div class="accordion-body">Open your booking in the dashboard and choose Reschedule. Pick a new slot from available times. Changes made well in advance are free.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="cancelHeadingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cancelCollapseTwo" aria-expanded="false" aria-controls="cancelCollapseTwo">
+                What is the cancellation policy?
+              </button>
+            </h2>
+            <div id="cancelCollapseTwo" class="accordion-collapse collapse" aria-labelledby="cancelHeadingTwo" data-bs-parent="#accordionCancel">
+              <div class="accordion-body">Cancel at least 4 hours before your slot for a full refund to the original payment method. Late cancellations may incur a fee to compensate the reserved beautician.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="cancelHeadingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cancelCollapseThree" aria-expanded="false" aria-controls="cancelCollapseThree">
+                What if my beautician is delayed?
+              </button>
+            </h2>
+            <div id="cancelCollapseThree" class="accordion-collapse collapse" aria-labelledby="cancelHeadingThree" data-bs-parent="#accordionCancel">
+              <div class="accordion-body">You will receive live tracking updates. If delays become significant, support can help rebook or arrange an alternate professional.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="cancelHeadingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cancelCollapseFour" aria-expanded="false" aria-controls="cancelCollapseFour">
+                Can I change the service after booking?
+              </button>
+            </h2>
+            <div id="cancelCollapseFour" class="accordion-collapse collapse" aria-labelledby="cancelHeadingFour" data-bs-parent="#accordionCancel">
+              <div class="accordion-body">Minor adjustments can often be handled with support. Larger service changes may require a new booking so pricing and duration stay accurate.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: CTA -->
+  <section class="cta-band">
+    <div class="deco-circle c1" aria-hidden="true"></div>
+    <div class="deco-circle c2" aria-hidden="true"></div>
+    <div class="container reveal-on-scroll">
+      <h2>Still Have A Question?</h2>
+      <p>Book with confidence — or reach out and our team will help you choose the right treatment.</p>
+      <div class="btn-group-gap" style="justify-content:center">
+        <a href="booking.html" class="btn btn-white">Book An Appointment</a>
+        <a href="contact.html" class="btn btn-outline-white">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Beauty<span>Spot</span></a>
+        <p>Home salon & beauty service on demand. Professional treatments delivered to your doorstep.</p>
+        <div class="social-links" style="margin-top:18px">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+        </div>
+      </div>
+      <div class="footer-col"><h5>Explore</h5>
+        <a href="about.html">About</a><a href="services.html">Services</a><a href="pricing.html">Pricing</a><a href="how-it-works.html">How It Works</a>
+      </div>
+      <div class="footer-col"><h5>Support</h5>
+        <a href="safety-standards.html">Safety Standards</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a href="blog.html">Blog</a>
+      </div>
+      <div class="footer-col"><h5>Account</h5>
+        <a href="login.html">Login</a><a href="register.html">Register</a><a href="customer-dashboard.html">Dashboard</a><a href="booking.html">Book Now</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 BeautySpot. All rights reserved.</span>
+      <span>Home Salon & Beauty Service On Demand</span>
+    </div>
+  </div>
+</footer>
+
+<button type="button" id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

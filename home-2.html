@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BeautySpot — Your Personal Beauty Experience At Home</title>
+  <meta name="description" content="Book a personal beauty experience at home with BeautySpot. Quick booking, verified beauticians, and salon-quality treatments at your doorstep.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/responsive.css" rel="stylesheet">
+
+<script>
+  (function(){
+    var t=localStorage.getItem("bs_theme"), d=localStorage.getItem("bs_dir");
+    if(t==="dark") document.documentElement.setAttribute("data-theme","dark");
+    if(d==="rtl") document.documentElement.setAttribute("dir","rtl");
+  })();
+</script>
+</head>
+<body>
+
+<div id="preloader" class="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-logo">Beauty<span>Spot</span></div>
+    <div class="preloader-spinner"></div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Beauty<span>Spot</span></a>
+    <ul class="nav-desktop">
+      <li class="has-dropdown">
+        <a href="index.html" class="nav-home-trigger">Home <i class="bi bi-chevron-down"></i></a>
+        <div class="nav-dropdown">
+          <a href="index.html">Home 1</a>
+          <a href="home-2.html">Home 2</a>
+        </div>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="how-it-works.html">How It Works</a></li>
+
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="customer-dashboard.html">Dashboard</a></li>
+    </ul>
+    <div class="header-actions">
+      <div class="nav-controls">
+        <button type="button" class="nav-control-btn theme-toggle" aria-label="Toggle theme" title="Toggle Light/Dark Mode">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button type="button" class="nav-control-btn rtl-toggle" aria-label="Toggle layout direction" title="Toggle RTL/LTR">
+          <span class="rtl-label">RTL</span>
+        </button>
+      </div>
+      <a href="login.html" class="header-login">Login</a>
+      <a href="booking.html" class="btn btn-primary header-cta">Book Appointment</a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<nav class="mobile-nav" aria-label="Mobile">
+  <ul>
+    <li>
+      <button class="mobile-drop-toggle" aria-expanded="false">Home <i class="bi bi-chevron-down"></i></button>
+      <div class="mobile-sub">
+        <a href="index.html">Home 1</a>
+        <a href="home-2.html">Home 2</a>
+      </div>
+    </li>
+    <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="how-it-works.html">How It Works</a></li>
+
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="customer-dashboard.html">Dashboard</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="login.html">Login</a></li>
+  </ul>
+  <div class="mobile-nav-actions"><!-- mobile-nav-controls-added -->
+    <div class="nav-controls" style="justify-content:center;margin-bottom:14px">
+      <button type="button" class="nav-control-btn theme-toggle" aria-label="Toggle theme" title="Toggle Light/Dark Mode">
+        <i class="bi bi-moon-stars"></i>
+      </button>
+      <button type="button" class="nav-control-btn rtl-toggle" aria-label="Toggle layout direction" title="Toggle RTL/LTR">
+        <span class="rtl-label">RTL</span>
+      </button>
+    </div>
+    <a href="booking.html" class="btn btn-primary">Book Appointment</a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- SECTION 1: HERO -->
+  <section class="hero-home2">
+    <div class="hero-home2-bg">
+      <img src="assets/images/services/service-detail-step3.png" alt="Premium at-home facial treatment with a beauty professional">
+    </div>
+    <div class="hero-home2-overlay" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero-home2-content reveal-on-scroll">
+        <span class="eyebrow" style="color:#F7A8C8">At-Home Beauty</span>
+        <h1>Your Personal Beauty Experience, At Home.</h1>
+        <p>Salon craftsmanship, soft lighting, and uninterrupted time — delivered to your door by verified beauty professionals.</p>
+        <div class="btn-group-gap">
+          <a href="booking.html" class="btn btn-primary">Book Now</a>
+          <a href="services.html" class="btn btn-outline-white">View Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: QUICK BOOKING -->
+  <section class="section-sm" style="padding-top:0;padding-bottom:40px">
+    <div class="container">
+      <div class="quick-book reveal-on-scroll">
+        <form id="quickBookForm" action="booking.html" method="get">
+          <div class="quick-book-grid">
+            <div class="form-group">
+              <label for="qbService">Choose Service</label>
+              <select id="qbService" name="service" class="form-select" required>
+                <option value="" disabled selected>Select a service</option>
+                <option value="glow-facial">Glow Facial</option>
+                <option value="hair-styling">Hair Styling</option>
+                <option value="manicure">Manicure</option>
+                <option value="pedicure">Pedicure</option>
+                <option value="bridal-makeup">Bridal Makeup</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="qbDate">Choose Date</label>
+              <input type="date" id="qbDate" name="date" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="qbTime">Choose Time</label>
+              <select id="qbTime" name="time" class="form-select" required>
+                <option value="" disabled selected>Select time</option>
+                <option value="10:00">10:00 AM</option>
+                <option value="12:00">12:00 PM</option>
+                <option value="14:00">2:00 PM</option>
+                <option value="16:00">4:00 PM</option>
+                <option value="18:00">6:00 PM</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="qbLocation">Choose Location</label>
+              <input type="text" id="qbLocation" name="location" class="form-control" placeholder="City or area" required>
+            </div>
+            <div class="form-group">
+              <label>&nbsp;</label>
+              <button type="submit" class="btn btn-primary" style="width:100%">Book Now</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: FEATURED SERVICES -->
+  <section class="section">
+    <div class="container">
+      <div class="reveal-on-scroll">
+        <span class="eyebrow">Featured</span>
+        <h2 class="section-title">Treatments Guests Book Most.</h2>
+        <p class="section-lead">A magazine-style edit of our signature home beauty services — each one designed for comfort and finish.</p>
+      </div>
+      <div class="featured-bento reveal-on-scroll" style="margin-top:40px">
+        <a href="service-details.html" class="bento-item tall">
+          <img src="assets/images/services/service-skin-cleanup.png" alt="Glow Facial">
+          <div class="bento-label">
+            <h3>Glow Facial</h3>
+            <p>Deep cleanse, massage &amp; luminous finish</p>
+          </div>
+        </a>
+        <a href="service-details.html" class="bento-item wide">
+          <img src="assets/images/unique-variants/services/service-hair-styling-variant-2.jpg" alt="Hair Styling">
+          <div class="bento-label">
+            <h3>Hair Styling</h3>
+            <p>Blowouts, soft waves &amp; occasion styling</p>
+          </div>
+        </a>
+        <a href="service-details.html" class="bento-item">
+          <img src="assets/images/unique-variants/services/service-manicure-variant-2.jpg" alt="Manicure">
+          <div class="bento-label">
+            <h3>Manicure</h3>
+            <p>Shape, care &amp; lasting polish</p>
+          </div>
+        </a>
+        <a href="service-details.html" class="bento-item">
+          <img src="assets/images/unique-variants/services/service-pedicure-variant-2.jpg" alt="Pedicure">
+          <div class="bento-label">
+            <h3>Pedicure</h3>
+            <p>Soothing soak &amp; pristine finish</p>
+          </div>
+        </a>
+        <a href="service-details.html" class="bento-item medium">
+          <img src="assets/images/unique-variants/services/service-bridal-makeup-variant-3.jpg" alt="Bridal Makeup">
+          <div class="bento-label">
+            <h3>Bridal Makeup</h3>
+            <p>Soft glam to full bridal at home</p>
+          </div>
+        </a>
+        <a href="service-details.html" class="bento-item medium">
+          <img src="assets/images/services/service-express-glam.png" alt="Express Glam">
+          <div class="bento-label">
+            <h3>Express Glam</h3>
+            <p>Quick party touch-ups &amp; radiant finish</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: BEAUTY EXPERIENCE -->
+  <section class="section bg-soft">
+    <div class="container">
+      <div class="experience-split reveal-on-scroll">
+        <div class="img-rounded" style="overflow:hidden;aspect-ratio:4/5;max-width:520px">
+          <img class="img-cover" src="assets/images/services/service-detox-cleanup.png" alt="Relaxing at-home beauty experience">
+        </div>
+        <div>
+          <span class="eyebrow">The Experience</span>
+          <h2 class="section-title">Salon Quality. Personal Comfort.</h2>
+          <p class="section-lead">Every BeautySpot visit blends professional technique with the ease of your own space — no waiting rooms, no rush, just focused care.</p>
+          <p>Our beauticians arrive with sanitized kits, premium products, and a calm approach so you can unwind while we refine your look.</p>
+          <div class="experience-stats">
+            <div class="stat-box">
+              <div class="num" data-count="5000" data-suffix="+">0</div>
+              <span>Home Visits</span>
+            </div>
+            <div class="stat-box">
+              <div class="num" data-count="120" data-suffix="+">0</div>
+              <span>Beauticians</span>
+            </div>
+            <div class="stat-box">
+              <div class="num" data-count="4" data-suffix=".9">0</div>
+              <span>Rating</span>
+            </div>
+            <div class="stat-box">
+              <div class="num" data-count="25" data-suffix="+">0</div>
+              <span>Cities</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: SAFETY -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center reveal-on-scroll">
+        <span class="eyebrow">Trust &amp; Care</span>
+        <h2 class="section-title centered">Beauty With Safety First.</h2>
+        <p class="section-lead">Hygiene is non-negotiable. Every home visit follows clear safety standards you can see and feel.</p>
+      </div>
+      <div class="safety-grid reveal-on-scroll">
+        <article class="safety-item">
+          <div class="icon"><i class="bi bi-bandaid"></i></div>
+          <h4>Sanitized Tools</h4>
+          <p>Instruments cleaned and packed fresh for each appointment.</p>
+        </article>
+        <article class="safety-item">
+          <div class="icon"><i class="bi bi-person-check"></i></div>
+          <h4>Verified Professionals</h4>
+          <p>Identity-checked beauticians trained for home service protocols.</p>
+        </article>
+        <article class="safety-item">
+          <div class="icon"><i class="bi bi-award"></i></div>
+          <h4>Premium Products</h4>
+          <p>Skin-safe formulas and trusted brands for consistent results.</p>
+        </article>
+        <article class="safety-item">
+          <div class="icon"><i class="bi bi-clipboard2-check"></i></div>
+          <h4>Hygiene Protocols</h4>
+          <p>Gloves, disposables, and clean setup before every treatment begins.</p>
+        </article>
+      </div>
+      <div class="text-center" style="margin-top:36px">
+        <a href="safety-standards.html" class="btn btn-outline">Our Safety Standards</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: PROFESSIONAL SPOTLIGHT -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="pro-spotlight reveal-on-scroll">
+        <div class="pro-spotlight-img">
+          <img class="img-cover" src="assets/images/unique-variants/professionals/meera-sharma-variant-4.jpg" alt="Meera Sharma, Facial & Skin specialist">
+          <span class="badge">Top Rated · 4.9 ★</span>
+        </div>
+        <div>
+          <span class="eyebrow">Professional Spotlight</span>
+          <h2 class="section-title">Meera Sharma</h2>
+          <p style="color:var(--pink);font-weight:600;margin-bottom:12px">Facial &amp; Skin Specialist · 8 Years Experience</p>
+          <p>Meera is known for gentle glow facials that feel restorative, never rushed. Clients love her calm presence, precise skin assessment, and products chosen for real results at home.</p>
+          <p>Whether you need a weekly refresh or a bridal skin prep plan, she builds each session around your skin’s needs and your schedule.</p>
+          <ul style="margin:20px 0 28px;padding:0;list-style:none">
+            <li style="padding:8px 0;border-bottom:1px solid var(--border)"><i class="bi bi-check2" style="color:var(--pink);margin-right:8px"></i> Glow Facial &amp; Deep Cleanup</li>
+            <li style="padding:8px 0;border-bottom:1px solid var(--border)"><i class="bi bi-check2" style="color:var(--pink);margin-right:8px"></i> Hydrating &amp; Anti-Dullness Rituals</li>
+            <li style="padding:8px 0;border-bottom:1px solid var(--border)"><i class="bi bi-check2" style="color:var(--pink);margin-right:8px"></i> Bridal Skin Prep</li>
+            <li style="padding:8px 0"><i class="bi bi-check2" style="color:var(--pink);margin-right:8px"></i> Sensitive Skin Care</li>
+          </ul>
+          <a href="booking.html" class="btn btn-primary">Book With Meera</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: CUSTOMER STORIES -->
+  <section class="section">
+    <div class="container">
+      <div class="experience-split reveal-on-scroll" style="direction:ltr">
+        <div>
+          <span class="eyebrow">Customer Stories</span>
+          <h2 class="section-title">She Wanted Calm. She Got A Perfect Finish.</h2>
+          <div class="stars" style="margin:16px 0">★★★★★</div>
+          <blockquote style="font-family:var(--font-serif);font-size:clamp(1.2rem,2.2vw,1.55rem);color:var(--dark);font-style:italic;line-height:1.5;margin:0 0 24px">
+            “I booked a soft glam look for my anniversary dinner. Rhea arrived early, set up quietly in my living room, and created a look that felt like me — only more radiant. I sipped tea while she worked. That is luxury.”
+          </blockquote>
+          <p><strong style="color:var(--dark)">Diya Nair</strong><br><span style="color:var(--pink)">Makeup Client · Bengaluru</span></p>
+          <p style="margin-top:20px">From first-time facials to wedding-week glam, our guests return because the experience feels personal, polished, and beautifully unhurried.</p>
+        </div>
+        <div class="img-rounded" style="overflow:hidden;aspect-ratio:3/4;max-width:480px;margin-left:auto">
+          <img class="img-cover" src="assets/images/unique-variants/testimonials/diya-nair-home2.jpg" alt="Customer enjoying beauty service at home">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 8: FINAL CTA -->
+  <section class="cta-band">
+    <div class="deco-circle c1" aria-hidden="true"></div>
+    <div class="deco-circle c2" aria-hidden="true"></div>
+    <div class="container reveal-on-scroll">
+      <h2>Your Beauty Appointment Is Just A Click Away.</h2>
+      <p>Select a service, choose a time that fits your day, and welcome a verified beautician to your door.</p>
+      <a href="booking.html" class="btn btn-white">Book Your Service</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Beauty<span>Spot</span></a>
+        <p>Home salon & beauty service on demand. Professional treatments delivered to your doorstep.</p>
+        <div class="social-links" style="margin-top:18px">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+        </div>
+      </div>
+      <div class="footer-col"><h5>Explore</h5>
+        <a href="about.html">About</a><a href="services.html">Services</a><a href="pricing.html">Pricing</a><a href="how-it-works.html">How It Works</a>
+      </div>
+      <div class="footer-col"><h5>Support</h5>
+        <a href="safety-standards.html">Safety Standards</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a href="blog.html">Blog</a>
+      </div>
+      <div class="footer-col"><h5>Account</h5>
+        <a href="login.html">Login</a><a href="register.html">Register</a><a href="customer-dashboard.html">Dashboard</a><a href="booking.html">Book Now</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 BeautySpot. All rights reserved.</span>
+      <span>Home Salon & Beauty Service On Demand</span>
+    </div>
+  </div>
+</footer>
+
+<button type="button" id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
